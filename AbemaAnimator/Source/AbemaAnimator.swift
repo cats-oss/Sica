@@ -9,14 +9,14 @@
 import Foundation
 import UIKit
 
-public enum AnimationPlayType {
-    case sequence
-    case parallel
-}
 
 
 final public class AbemaAnimator {
 
+    public enum AnimationPlayType {
+        case sequence
+        case parallel
+    }
     private let group = CAAnimationGroup()
     private var animations = [CAAnimation]()
 
