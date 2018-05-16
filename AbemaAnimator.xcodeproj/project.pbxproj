@@ -16,10 +16,6 @@
 		D4CB78AC20ABD78D003232F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CB789620ABD78D003232F6 /* Main.storyboard */; };
 		D4CB78AD20ABD78D003232F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB789820ABD78D003232F6 /* AppDelegate.swift */; };
 		D4CB78AE20ABD78D003232F6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4CB789920ABD78D003232F6 /* Info.plist */; };
-		D4CB78AF20ABD78D003232F6 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB789B20ABD78D003232F6 /* DemoTests.swift */; };
-		D4CB78B020ABD78D003232F6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4CB789C20ABD78D003232F6 /* Info.plist */; };
-		D4CB78B120ABD78D003232F6 /* DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB789E20ABD78D003232F6 /* DemoUITests.swift */; };
-		D4CB78B220ABD78D003232F6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4CB789F20ABD78D003232F6 /* Info.plist */; };
 		D4CB78CA20AC2BDD003232F6 /* CAAnimation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C120AC2BDD003232F6 /* CAAnimation+Extension.swift */; };
 		D4CB78CB20AC2BDD003232F6 /* TransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C220AC2BDD003232F6 /* TransitionType.swift */; };
 		D4CB78CC20AC2BDD003232F6 /* AnimationCanceller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C320AC2BDD003232F6 /* AnimationCanceller.swift */; };
@@ -73,10 +69,6 @@
 		D4CB789720ABD78D003232F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4CB789820ABD78D003232F6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4CB789920ABD78D003232F6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4CB789B20ABD78D003232F6 /* DemoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTests.swift; sourceTree = "<group>"; };
-		D4CB789C20ABD78D003232F6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4CB789E20ABD78D003232F6 /* DemoUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoUITests.swift; sourceTree = "<group>"; };
-		D4CB789F20ABD78D003232F6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4CB78C120AC2BDD003232F6 /* CAAnimation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAAnimation+Extension.swift"; sourceTree = "<group>"; };
 		D4CB78C220AC2BDD003232F6 /* TransitionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionType.swift; sourceTree = "<group>"; };
 		D4CB78C320AC2BDD003232F6 /* AnimationCanceller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationCanceller.swift; sourceTree = "<group>"; };
@@ -147,8 +139,6 @@
 			children = (
 				D4CB788E20ABD78D003232F6 /* Demo.xcodeproj */,
 				D4CB789120ABD78D003232F6 /* Demo */,
-				D4CB789A20ABD78D003232F6 /* DemoTests */,
-				D4CB789D20ABD78D003232F6 /* DemoUITests */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -174,24 +164,6 @@
 				D4CB789920ABD78D003232F6 /* Info.plist */,
 			);
 			path = Demo;
-			sourceTree = "<group>";
-		};
-		D4CB789A20ABD78D003232F6 /* DemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				D4CB789B20ABD78D003232F6 /* DemoTests.swift */,
-				D4CB789C20ABD78D003232F6 /* Info.plist */,
-			);
-			path = DemoTests;
-			sourceTree = "<group>";
-		};
-		D4CB789D20ABD78D003232F6 /* DemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D4CB789E20ABD78D003232F6 /* DemoUITests.swift */,
-				D4CB789F20ABD78D003232F6 /* Info.plist */,
-			);
-			path = DemoUITests;
 			sourceTree = "<group>";
 		};
 		D4CB78C020AC2BDD003232F6 /* Source */ = {
@@ -331,9 +303,7 @@
 			files = (
 				D4CB78AE20ABD78D003232F6 /* Info.plist in Resources */,
 				D4CB78AC20ABD78D003232F6 /* Main.storyboard in Resources */,
-				D4CB78B220ABD78D003232F6 /* Info.plist in Resources */,
 				D4CB78AA20ABD78D003232F6 /* Assets.xcassets in Resources */,
-				D4CB78B020ABD78D003232F6 /* Info.plist in Resources */,
 				D4CB78AB20ABD78D003232F6 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,9 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4CB78AF20ABD78D003232F6 /* DemoTests.swift in Sources */,
 				D4CB78AD20ABD78D003232F6 /* AppDelegate.swift in Sources */,
-				D4CB78B120ABD78D003232F6 /* DemoUITests.swift in Sources */,
 				D4CB78CC20AC2BDD003232F6 /* AnimationCanceller.swift in Sources */,
 				D4CB78A920ABD78D003232F6 /* ViewController.swift in Sources */,
 				D4CB78CF20AC2BDD003232F6 /* TimingFunction.swift in Sources */,
