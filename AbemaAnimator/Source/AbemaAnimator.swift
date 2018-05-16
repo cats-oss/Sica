@@ -17,8 +17,14 @@ final public class AbemaAnimator {
         case sequence
         case parallel
     }
+
+    private let view: UIView
     private let group = CAAnimationGroup()
     private var animations = [CAAnimation]()
+
+    init(view: UIView) {
+        self.view = view
+    }
 
     private func sequence() {
         for (i, animation) in animations.enumerated() {
@@ -44,7 +50,7 @@ final public class AbemaAnimator {
     }
 
     @discardableResult
-    public func run(type: AnimationPlayType, view: UIView, completion: (() -> Void)? = nil) -> AnimationCanceller {
+    public func run(type: AnimationPlayType, completion: (() -> Void)? = nil) -> AnimationCanceller {
 
         if case .sequence = type {
             sequence()

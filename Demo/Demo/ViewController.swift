@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         view.addSubview(sampleView)
 
         Animation: do {
-            let animator = AbemaAnimator()
+            let animator = AbemaAnimator(view: sampleView)
             let v: [CGFloat] = [0, 12, 10, 4, 10, -22].map { $0 + sampleView.center.y }
             let d = [0.5, 1.5, 0.2, 0.8, 0.2]
             let timingFunctions: [TimingFunction] = [.easeOutExpo, .easeInOutCubic, .easeOutCubic, .easeInOutSine, .easeInQuint]
@@ -33,6 +33,7 @@ class ViewController: UIViewController {
                 .addBasicAnimation(keyPath: .positionY, value: (from: v[4], to: v[5]), delay: 0.7, duration: d[4], timingFunction: timingFunctions[4])
                 .addSpringAnimation(keyPath: .boundsSize, value: (from: CGSize(width: 0, height: 0), to:  CGSize(width: 240, height: 240), damping: 12, mass: 1, stiffness: 240, initialVelocity: 0), duration: 1)
                 .run(type: .sequence, view: sampleView) {
+                .run(type: .sequence) {
                     print("Animation Done")
             }
         }
