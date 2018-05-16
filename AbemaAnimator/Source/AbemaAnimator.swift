@@ -20,6 +20,23 @@ final public class AbemaAnimator {
     private let group = CAAnimationGroup()
     private var animations = [CAAnimation]()
 
+    private func sequence() {
+        for (i, animation) in animations.enumerated() {
+            if i == 0 {continue}
+            let preAnimation = animations[i - 1]
+            animation.beginTime += preAnimation.beginTime + preAnimation.duration
+        }
+    }
+
+    private func totalDuration(type: AnimationPlayType) -> Double {
+        switch type {
+        case .sequence:
+            return animations.last.map { $0.beginTime + $0.duration} ?? 0
+        case .parallel:
+            return animations.map { $0.duration }.max() ?? 0
+        }
+    }
+
     @discardableResult
     public func delay(_ delay: Double = 0) -> Self {
         group.beginTime = CACurrentMediaTime() + delay
@@ -30,10 +47,10 @@ final public class AbemaAnimator {
     public func run(type: AnimationPlayType, view: UIView, completion: (() -> Void)? = nil) -> AnimationCanceller {
 
         if case .sequence = type {
-            animations.sequence()
+            sequence()
         }
         group.animations = animations
-        group.duration = animations.totalDuration(type: type)
+        group.duration = totalDuration(type: type)
         group.fillMode = kCAFillModeForwards
         group.isRemovedOnCompletion = false
 

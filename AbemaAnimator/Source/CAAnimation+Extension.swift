@@ -17,23 +17,3 @@ extension CAAnimation {
         self.isRemovedOnCompletion = false
     }
 }
-
-extension Array where Element == CAAnimation {
-    func sequence() {
-        for (i, animation) in self.enumerated() {
-            if i == 0 {continue}
-            let preAnimation = self[i - 1]
-            animation.beginTime += preAnimation.beginTime + preAnimation.duration
-        }
-    }
-
-    func totalDuration(type: AnimationPlayType) -> Double {
-        switch type {
-        case .sequence:
-            return self.last.map { $0.beginTime + $0.duration} ?? 0
-        case .parallel:
-            return self.map { $0.duration }.max() ?? 0
-        }
-    }
-}
-
