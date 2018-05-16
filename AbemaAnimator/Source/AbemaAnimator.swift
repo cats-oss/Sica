@@ -14,9 +14,6 @@ public enum AnimationPlayType {
     case parallel
 }
 
-public typealias BasicValue<T> = (from: T, to: T)
-public typealias SpringValue<T> = (from: T, to: T, damping: CGFloat, mass: CGFloat, stiffness: CGFloat, initialVelocity: CGFloat)
-public typealias TransitionValue<T> = (startProgress: Float, endProgress: Float, type: TransitionType, subtype: TransitionSubType)
 
 final public class AbemaAnimator {
 
@@ -52,10 +49,10 @@ final public class AbemaAnimator {
     }
 
     @discardableResult
-    public func addBasicAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, value: BasicValue<T>, delay: Double = 0, duration: Double, timingFunction: TimingFunction = .default) -> Self {
+    public func addBasicAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, from: T, to: T, delay: Double = 0, duration: Double, timingFunction: TimingFunction = .default) -> Self {
         let basicAnimation = CABasicAnimation(keyPath: keyPath.rawValue)
-        basicAnimation.fromValue = value.from
-        basicAnimation.toValue = value.to
+        basicAnimation.fromValue = from
+        basicAnimation.toValue = to
         basicAnimation.configure(delay: delay, duration: duration, timingFunction: timingFunction)
 
         animations.append(basicAnimation)
@@ -63,14 +60,14 @@ final public class AbemaAnimator {
     }
 
     @discardableResult
-    public func addSpringAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, value: SpringValue<T>, delay: Double = 0, duration: Double, timingFunction: TimingFunction = .default) -> Self {
+    public func addSpringAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, from: T, to: T, damping: CGFloat, mass: CGFloat, stiffness: CGFloat, initialVelocity: CGFloat, delay: Double = 0, duration: Double, timingFunction: TimingFunction = .default) -> Self {
         let springAnimation = CASpringAnimation(keyPath: keyPath.rawValue)
-        springAnimation.fromValue = value.from
-        springAnimation.toValue = value.to
-        springAnimation.damping = value.damping
-        springAnimation.mass = value.mass
-        springAnimation.stiffness = value.stiffness
-        springAnimation.initialVelocity = value.initialVelocity
+        springAnimation.fromValue = from
+        springAnimation.toValue = to
+        springAnimation.damping = damping
+        springAnimation.mass = mass
+        springAnimation.stiffness = stiffness
+        springAnimation.initialVelocity = initialVelocity
         springAnimation.configure(delay: delay, duration: duration, timingFunction: timingFunction)
 
         animations.append(springAnimation)
@@ -78,12 +75,12 @@ final public class AbemaAnimator {
     }
 
     @discardableResult
-    public func addTransitionAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, value: TransitionValue<T>, delay: Double = 0, duration: Double, timingFunction: TimingFunction = .default) -> Self {
+    public func addTransitionAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, startProgress: Float, endProgress: Float, type: TransitionType, subtype: TransitionSubType, delay: Double = 0, duration: Double, timingFunction: TimingFunction = .default) -> Self {
         let transitionAnimation = CATransition()
-        transitionAnimation.startProgress = value.startProgress
-        transitionAnimation.endProgress = value.endProgress
-        transitionAnimation.type = value.type.rawValue
-        transitionAnimation.subtype = value.subtype.rawValue
+        transitionAnimation.startProgress = startProgress
+        transitionAnimation.endProgress = endProgress
+        transitionAnimation.type = type.rawValue
+        transitionAnimation.subtype = subtype.rawValue
         transitionAnimation.configure(delay: delay, duration: duration, timingFunction: timingFunction)
 
         animations.append(transitionAnimation)
