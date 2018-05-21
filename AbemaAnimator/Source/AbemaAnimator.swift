@@ -72,7 +72,7 @@ final public class AbemaAnimator {
     }
 
     @discardableResult
-    public func addBasicAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, from: T, to: T, delay: Double = 0, duration: Double, timingFunction: TimingFunction = .default) -> Self {
+    public func addBasicAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, from: T, to: T, duration: Double, delay: Double = 0, timingFunction: TimingFunction = .default) -> Self {
         let basicAnimation = CABasicAnimation(keyPath: keyPath.rawValue)
         basicAnimation.fromValue = from
         basicAnimation.toValue = to
@@ -83,7 +83,7 @@ final public class AbemaAnimator {
     }
 
     @discardableResult
-    public func addSpringAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, from: T, to: T, damping: CGFloat, mass: CGFloat, stiffness: CGFloat, initialVelocity: CGFloat, delay: Double = 0, duration: Double, timingFunction: TimingFunction = .default) -> Self {
+    public func addSpringAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, from: T, to: T, damping: CGFloat, mass: CGFloat, stiffness: CGFloat, initialVelocity: CGFloat, duration: Double, delay: Double = 0, timingFunction: TimingFunction = .default) -> Self {
         let springAnimation = CASpringAnimation(keyPath: keyPath.rawValue)
         springAnimation.fromValue = from
         springAnimation.toValue = to
@@ -98,7 +98,7 @@ final public class AbemaAnimator {
     }
 
     @discardableResult
-    public func addTransitionAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, startProgress: Float, endProgress: Float, type: TransitionType, subtype: TransitionSubType, delay: Double = 0, duration: Double, timingFunction: TimingFunction = .default) -> Self {
+    public func addTransitionAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, startProgress: Float, endProgress: Float, type: TransitionType, subtype: TransitionSubType, duration: Double, delay: Double = 0, timingFunction: TimingFunction = .default) -> Self {
         let transitionAnimation = CATransition()
         transitionAnimation.startProgress = startProgress
         transitionAnimation.endProgress = endProgress
