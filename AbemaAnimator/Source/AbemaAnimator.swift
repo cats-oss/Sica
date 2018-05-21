@@ -27,10 +27,9 @@ final public class AbemaAnimator {
     }
 
     private func sequence() {
-        for (i, animation) in animations.enumerated() {
-            if i == 0 {continue}
-            let preAnimation = animations[i - 1]
-            animation.beginTime += preAnimation.beginTime + preAnimation.duration
+        for (i, anim) in animations.enumerated() where i > 0 {
+            let prev = animations[i - 1]
+            anim.beginTime += prev.beginTime + prev.duration
         }
     }
 
