@@ -18,10 +18,10 @@ public struct TransitionType {
 }
 
 public struct TransitionSubType {
-    public static let right = TransitionType(rawValue: kCATransitionFromRight)
-    public static let left = TransitionType(rawValue: kCATransitionFromLeft)
-    public static let top = TransitionType(rawValue: kCATransitionFromTop)
-    public static let bottom = TransitionType(rawValue: kCATransitionFromBottom)
+    public static let right = TransitionSubType(rawValue: kCATransitionFromRight)
+    public static let left = TransitionSubType(rawValue: kCATransitionFromLeft)
+    public static let top = TransitionSubType(rawValue: kCATransitionFromTop)
+    public static let bottom = TransitionSubType(rawValue: kCATransitionFromBottom)
 
     let rawValue: String
 }
