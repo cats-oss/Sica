@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         view.addSubview(sampleView)
 
         Animation: do {
-            let animator = AbemaAnimator(view: sampleView)
+            let animator = Animator(view: sampleView)
             let v: [CGFloat] = [0, 12, 10, 4, 10, -22].map { $0 + sampleView.center.y }
             let d = [0.5, 1.5, 0.2, 0.8, 0.2]
             let timingFunctions: [TimingFunction] = [.easeOutExpo, .easeInOutCubic, .easeOutCubic, .easeInOutSine, .easeInQuint]

@@ -11,7 +11,7 @@ import UIKit
 
 
 
-final public class AbemaAnimator {
+final public class Animator {
 
     public enum AnimationPlayType {
         case sequence
