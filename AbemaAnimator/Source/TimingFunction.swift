@@ -30,7 +30,7 @@ public struct TimingFunction {
     }
 }
 
-// ref: https://github.com/ai/easings.net/
+// - SeeAlso: https://github.com/ai/easings.net/
 extension TimingFunction {
     public static let easeInSine = TimingFunction(controlPoints: 0.47, 0, 0.745, 0.715)
     public static let easeOutSine = TimingFunction(controlPoints: 0.39, 0.575, 0.565, 1)
