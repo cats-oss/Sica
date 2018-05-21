@@ -42,7 +42,6 @@ final public class Animator {
         }
     }
 
-    @discardableResult
     public func delay(_ delay: Double = 0) -> Self {
         group.beginTime = CACurrentMediaTime() + delay
         return self
@@ -75,7 +74,6 @@ final public class Animator {
         return AnimationCanceller(layer: view.layer, key: key)
     }
 
-    @discardableResult
     public func addBasicAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, from: T, to: T, duration: Double, delay: Double = 0, timingFunction: TimingFunction = .default) -> Self {
         let basicAnimation = CABasicAnimation(keyPath: keyPath.rawValue)
         basicAnimation.fromValue = from
@@ -86,7 +84,6 @@ final public class Animator {
         return self
     }
 
-    @discardableResult
     public func addSpringAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, from: T, to: T, damping: CGFloat, mass: CGFloat, stiffness: CGFloat, initialVelocity: CGFloat, duration: Double, delay: Double = 0, timingFunction: TimingFunction = .default) -> Self {
         let springAnimation = CASpringAnimation(keyPath: keyPath.rawValue)
         springAnimation.fromValue = from
@@ -101,7 +98,6 @@ final public class Animator {
         return self
     }
 
-    @discardableResult
     public func addTransitionAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, startProgress: Float, endProgress: Float, type: TransitionType, subtype: TransitionSubType, duration: Double, delay: Double = 0, timingFunction: TimingFunction = .default) -> Self {
         let transitionAnimation = CATransition()
         transitionAnimation.startProgress = startProgress
