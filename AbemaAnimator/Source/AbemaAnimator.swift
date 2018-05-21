@@ -22,7 +22,7 @@ final public class Animator {
     private let group = CAAnimationGroup()
     private var animations = [CAAnimation]()
 
-    init(view: UIView) {
+    public init(view: UIView) {
         self.view = view
     }
 

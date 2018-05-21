@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D40D031F20B2660600E8FE38 /* AbemaAnimator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40D031E20B2660600E8FE38 /* AbemaAnimator.framework */; };
 		D4A6100A20ABCA370079871A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A6100920ABCA370079871A /* AppDelegate.swift */; };
 		D4A6100C20ABCA370079871A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A6100B20ABCA370079871A /* ViewController.swift */; };
 		D4A6100F20ABCA370079871A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A6100D20ABCA370079871A /* Main.storyboard */; };
@@ -14,13 +15,6 @@
 		D4A6101420ABCA390079871A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A6101220ABCA390079871A /* LaunchScreen.storyboard */; };
 		D4A6101F20ABCA390079871A /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A6101E20ABCA390079871A /* DemoTests.swift */; };
 		D4A6102A20ABCA390079871A /* DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A6102920ABCA390079871A /* DemoUITests.swift */; };
-		D4A6103A20ABCB0A0079871A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4A6103920ABCB0A0079871A /* Info.plist */; };
-		D4A6103C20ABCB8E0079871A /* AbemaAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A6103B20ABCB8E0079871A /* AbemaAnimator.swift */; };
-		D4CB788A20ABD02E003232F6 /* TimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB788920ABD02E003232F6 /* TimingFunction.swift */; };
-		D4CB788C20ABD1D3003232F6 /* AnimationKeyPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB788B20ABD1D3003232F6 /* AnimationKeyPaths.swift */; };
-		D4CB78B820ABE5ED003232F6 /* AnimationCanceller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78B720ABE5ED003232F6 /* AnimationCanceller.swift */; };
-		D4CB78BA20ABFEAD003232F6 /* CAAnimation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78B920ABFEAD003232F6 /* CAAnimation+Extension.swift */; };
-		D4CB78BC20AC1B5C003232F6 /* TransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78BB20AC1B5C003232F6 /* TransitionType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D40D031E20B2660600E8FE38 /* AbemaAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AbemaAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A6100620ABCA370079871A /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A6100920ABCA370079871A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4A6100B20ABCA370079871A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,14 +49,6 @@
 		D4A6102520ABCA390079871A /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A6102920ABCA390079871A /* DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUITests.swift; sourceTree = "<group>"; };
 		D4A6102B20ABCA390079871A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4A6103820ABCB0A0079871A /* AbemaAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbemaAnimator.h; sourceTree = "<group>"; };
-		D4A6103920ABCB0A0079871A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4A6103B20ABCB8E0079871A /* AbemaAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbemaAnimator.swift; sourceTree = "<group>"; };
-		D4CB788920ABD02E003232F6 /* TimingFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingFunction.swift; sourceTree = "<group>"; };
-		D4CB788B20ABD1D3003232F6 /* AnimationKeyPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationKeyPaths.swift; sourceTree = "<group>"; };
-		D4CB78B720ABE5ED003232F6 /* AnimationCanceller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCanceller.swift; sourceTree = "<group>"; };
-		D4CB78B920ABFEAD003232F6 /* CAAnimation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAAnimation+Extension.swift"; sourceTree = "<group>"; };
-		D4CB78BB20AC1B5C003232F6 /* TransitionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D40D031F20B2660600E8FE38 /* AbemaAnimator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,14 +77,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D40D031D20B2660600E8FE38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D40D031E20B2660600E8FE38 /* AbemaAnimator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D4A60FFD20ABCA370079871A = {
 			isa = PBXGroup;
 			children = (
-				D4A6103720ABCB0A0079871A /* AbemaAnimator */,
 				D4A6100820ABCA370079871A /* Demo */,
 				D4A6101D20ABCA390079871A /* DemoTests */,
 				D4A6102820ABCA390079871A /* DemoUITests */,
 				D4A6100720ABCA370079871A /* Products */,
+				D40D031D20B2660600E8FE38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,30 +135,6 @@
 				D4A6102B20ABCA390079871A /* Info.plist */,
 			);
 			path = DemoUITests;
-			sourceTree = "<group>";
-		};
-		D4A6103720ABCB0A0079871A /* AbemaAnimator */ = {
-			isa = PBXGroup;
-			children = (
-				D4CB78B620ABE5B9003232F6 /* Source */,
-				D4A6103820ABCB0A0079871A /* AbemaAnimator.h */,
-				D4A6103920ABCB0A0079871A /* Info.plist */,
-			);
-			name = AbemaAnimator;
-			path = ../AbemaAnimator;
-			sourceTree = "<group>";
-		};
-		D4CB78B620ABE5B9003232F6 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				D4A6103B20ABCB8E0079871A /* AbemaAnimator.swift */,
-				D4CB788920ABD02E003232F6 /* TimingFunction.swift */,
-				D4CB788B20ABD1D3003232F6 /* AnimationKeyPaths.swift */,
-				D4CB78B720ABE5ED003232F6 /* AnimationCanceller.swift */,
-				D4CB78B920ABFEAD003232F6 /* CAAnimation+Extension.swift */,
-				D4CB78BB20AC1B5C003232F6 /* TransitionType.swift */,
-			);
-			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +241,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4A6103A20ABCB0A0079871A /* Info.plist in Resources */,
 				D4A6101420ABCA390079871A /* LaunchScreen.storyboard in Resources */,
 				D4A6101120ABCA390079871A /* Assets.xcassets in Resources */,
 				D4A6100F20ABCA370079871A /* Main.storyboard in Resources */,
@@ -297,14 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4CB78BA20ABFEAD003232F6 /* CAAnimation+Extension.swift in Sources */,
 				D4A6100C20ABCA370079871A /* ViewController.swift in Sources */,
-				D4CB788A20ABD02E003232F6 /* TimingFunction.swift in Sources */,
 				D4A6100A20ABCA370079871A /* AppDelegate.swift in Sources */,
-				D4CB78BC20AC1B5C003232F6 /* TransitionType.swift in Sources */,
-				D4CB788C20ABD1D3003232F6 /* AnimationKeyPaths.swift in Sources */,
-				D4CB78B820ABE5ED003232F6 /* AnimationCanceller.swift in Sources */,
-				D4A6103C20ABCB8E0079871A /* AbemaAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

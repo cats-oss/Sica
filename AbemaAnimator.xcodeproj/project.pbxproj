@@ -10,12 +10,6 @@
 		D4A60FED20ABC9890079871A /* AbemaAnimator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A60FE320ABC9890079871A /* AbemaAnimator.framework */; };
 		D4A60FF220ABC9890079871A /* AbemaAnimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A60FF120ABC9890079871A /* AbemaAnimatorTests.swift */; };
 		D4A60FF420ABC9890079871A /* AbemaAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A60FE620ABC9890079871A /* AbemaAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D4CB78A920ABD78D003232F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB789220ABD78D003232F6 /* ViewController.swift */; };
-		D4CB78AA20ABD78D003232F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CB789320ABD78D003232F6 /* Assets.xcassets */; };
-		D4CB78AB20ABD78D003232F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CB789420ABD78D003232F6 /* LaunchScreen.storyboard */; };
-		D4CB78AC20ABD78D003232F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CB789620ABD78D003232F6 /* Main.storyboard */; };
-		D4CB78AD20ABD78D003232F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB789820ABD78D003232F6 /* AppDelegate.swift */; };
-		D4CB78AE20ABD78D003232F6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4CB789920ABD78D003232F6 /* Info.plist */; };
 		D4CB78CA20AC2BDD003232F6 /* CAAnimation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C120AC2BDD003232F6 /* CAAnimation+Extension.swift */; };
 		D4CB78CB20AC2BDD003232F6 /* TransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C220AC2BDD003232F6 /* TransitionType.swift */; };
 		D4CB78CC20AC2BDD003232F6 /* AnimationCanceller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C320AC2BDD003232F6 /* AnimationCanceller.swift */; };
@@ -32,27 +26,6 @@
 			remoteGlobalIDString = D4A60FE220ABC9890079871A;
 			remoteInfo = AbemaAnimator;
 		};
-		D4CB78A320ABD78D003232F6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D4CB788E20ABD78D003232F6 /* Demo.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D4A6100620ABCA370079871A;
-			remoteInfo = Demo;
-		};
-		D4CB78A520ABD78D003232F6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D4CB788E20ABD78D003232F6 /* Demo.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D4A6101A20ABCA390079871A;
-			remoteInfo = DemoTests;
-		};
-		D4CB78A720ABD78D003232F6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D4CB788E20ABD78D003232F6 /* Demo.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D4A6102520ABCA390079871A;
-			remoteInfo = DemoUITests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -62,13 +35,6 @@
 		D4A60FEC20ABC9890079871A /* AbemaAnimatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbemaAnimatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A60FF120ABC9890079871A /* AbemaAnimatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbemaAnimatorTests.swift; sourceTree = "<group>"; };
 		D4A60FF320ABC9890079871A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4CB788E20ABD78D003232F6 /* Demo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Demo.xcodeproj; sourceTree = "<group>"; };
-		D4CB789220ABD78D003232F6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D4CB789320ABD78D003232F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D4CB789520ABD78D003232F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D4CB789720ABD78D003232F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D4CB789820ABD78D003232F6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D4CB789920ABD78D003232F6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4CB78C120AC2BDD003232F6 /* CAAnimation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAAnimation+Extension.swift"; sourceTree = "<group>"; };
 		D4CB78C220AC2BDD003232F6 /* TransitionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionType.swift; sourceTree = "<group>"; };
 		D4CB78C320AC2BDD003232F6 /* AnimationCanceller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationCanceller.swift; sourceTree = "<group>"; };
@@ -99,7 +65,6 @@
 		D4A60FD920ABC9890079871A = {
 			isa = PBXGroup;
 			children = (
-				D4CB788D20ABD78D003232F6 /* Demo */,
 				D4A60FE520ABC9890079871A /* AbemaAnimator */,
 				D4A60FF020ABC9890079871A /* AbemaAnimatorTests */,
 				D4A60FE420ABC9890079871A /* Products */,
@@ -132,38 +97,6 @@
 				D4A60FF320ABC9890079871A /* Info.plist */,
 			);
 			path = AbemaAnimatorTests;
-			sourceTree = "<group>";
-		};
-		D4CB788D20ABD78D003232F6 /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				D4CB788E20ABD78D003232F6 /* Demo.xcodeproj */,
-				D4CB789120ABD78D003232F6 /* Demo */,
-			);
-			path = Demo;
-			sourceTree = "<group>";
-		};
-		D4CB788F20ABD78D003232F6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D4CB78A420ABD78D003232F6 /* Demo.app */,
-				D4CB78A620ABD78D003232F6 /* DemoTests.xctest */,
-				D4CB78A820ABD78D003232F6 /* DemoUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D4CB789120ABD78D003232F6 /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				D4CB789220ABD78D003232F6 /* ViewController.swift */,
-				D4CB789320ABD78D003232F6 /* Assets.xcassets */,
-				D4CB789420ABD78D003232F6 /* LaunchScreen.storyboard */,
-				D4CB789620ABD78D003232F6 /* Main.storyboard */,
-				D4CB789820ABD78D003232F6 /* AppDelegate.swift */,
-				D4CB789920ABD78D003232F6 /* Info.plist */,
-			);
-			path = Demo;
 			sourceTree = "<group>";
 		};
 		D4CB78C020AC2BDD003232F6 /* Source */ = {
@@ -258,12 +191,6 @@
 			mainGroup = D4A60FD920ABC9890079871A;
 			productRefGroup = D4A60FE420ABC9890079871A /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = D4CB788F20ABD78D003232F6 /* Products */;
-					ProjectRef = D4CB788E20ABD78D003232F6 /* Demo.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				D4A60FE220ABC9890079871A /* AbemaAnimator */,
@@ -272,39 +199,11 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		D4CB78A420ABD78D003232F6 /* Demo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = Demo.app;
-			remoteRef = D4CB78A320ABD78D003232F6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D4CB78A620ABD78D003232F6 /* DemoTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = DemoTests.xctest;
-			remoteRef = D4CB78A520ABD78D003232F6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D4CB78A820ABD78D003232F6 /* DemoUITests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = DemoUITests.xctest;
-			remoteRef = D4CB78A720ABD78D003232F6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		D4A60FE120ABC9890079871A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4CB78AE20ABD78D003232F6 /* Info.plist in Resources */,
-				D4CB78AC20ABD78D003232F6 /* Main.storyboard in Resources */,
-				D4CB78AA20ABD78D003232F6 /* Assets.xcassets in Resources */,
-				D4CB78AB20ABD78D003232F6 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,9 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4CB78AD20ABD78D003232F6 /* AppDelegate.swift in Sources */,
 				D4CB78CC20AC2BDD003232F6 /* AnimationCanceller.swift in Sources */,
-				D4CB78A920ABD78D003232F6 /* ViewController.swift in Sources */,
 				D4CB78CF20AC2BDD003232F6 /* TimingFunction.swift in Sources */,
 				D4CB78CB20AC2BDD003232F6 /* TransitionType.swift in Sources */,
 				D4CB78CA20AC2BDD003232F6 /* CAAnimation+Extension.swift in Sources */,
@@ -350,25 +247,6 @@
 			targetProxy = D4A60FEE20ABC9890079871A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D4CB789420ABD78D003232F6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D4CB789520ABD78D003232F6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		D4CB789620ABD78D003232F6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D4CB789720ABD78D003232F6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D4A60FF520ABC9890079871A /* Debug */ = {
