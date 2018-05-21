@@ -61,12 +61,17 @@ final public class Animator {
 
 
         let key = UUID().uuidString
-        CATransaction.begin()
-        CATransaction.setCompletionBlock {
-            completion?()
+
+        if let completion = completion {
+            CATransaction.begin()
+            CATransaction.setCompletionBlock {
+                completion()
+            }
+            view.layer.add(group, forKey: key)
+            CATransaction.commit()
+        } else {
+            view.layer.add(group, forKey: key)
         }
-        view.layer.add(group, forKey: key)
-        CATransaction.commit()
         return AnimationCanceller(layer: view.layer, key: key)
     }
 
