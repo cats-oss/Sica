@@ -21,9 +21,11 @@ final public class Animator {
     private let view: UIView
     private let group = CAAnimationGroup()
     private var animations = [CAAnimation]()
+    public let key: String
 
-    public init(view: UIView) {
+    public init(view: UIView, forKey key: String? = nil) {
         self.view = view
+        self.key = key ?? UUID().uuidString
     }
 
     private func sequence() {
@@ -47,8 +49,11 @@ final public class Animator {
         return self
     }
 
-    @discardableResult
-    public func run(type: AnimationPlayType, completion: (() -> Void)? = nil) -> AnimationCanceller {
+    public func cancel() {
+        view.layer.removeAnimation(forKey: key)
+    }
+
+    public func run(type: AnimationPlayType, completion: (() -> Void)? = nil) {
 
         if case .sequence = type {
             sequence()
@@ -57,9 +62,6 @@ final public class Animator {
         group.duration = totalDuration(type: type)
         group.fillMode = kCAFillModeForwards
         group.isRemovedOnCompletion = false
-
-
-        let key = UUID().uuidString
 
         if let completion = completion {
             CATransaction.begin()
@@ -71,7 +73,6 @@ final public class Animator {
         } else {
             view.layer.add(group, forKey: key)
         }
-        return AnimationCanceller(layer: view.layer, key: key)
     }
 
     public func addBasicAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, from: T, to: T, duration: Double, delay: Double = 0, timingFunction: TimingFunction = .default) -> Self {
