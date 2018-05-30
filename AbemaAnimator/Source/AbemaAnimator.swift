@@ -53,8 +53,8 @@ public final class Animator {
     }
 
     public func forever(autoreverses: Bool = true) -> Self {
-        group.repeatCount = 1e100
         if isReadyAnimation { return self }
+        group.repeatCount = Float.greatestFiniteMagnitude
         group.autoreverses = autoreverses
         return self
     }
