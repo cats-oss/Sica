@@ -1,0 +1,25 @@
+disabled_rules:
+- trailing_whitespace
+- type_name
+- function_parameter_count
+
+line_length: 300
+
+type_body_length:
+- 200 # warning
+- 400 # error
+
+variable_name_max_length:
+- 60 # warning
+- 80 # error
+
+variable_name_min_length:
+- 1 # warning
+- 0 # error
+
+identifier_name:
+  min_length: 1
+
+function_body_length:
+- 100 # warning
+- 200 # error
