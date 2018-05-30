@@ -34,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		D40D031E20B2660600E8FE38 /* AbemaAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AbemaAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D47A550720BE80A000AC5387 /* Easing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Easing.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D4A6100620ABCA370079871A /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A6100920ABCA370079871A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4A6100B20ABCA370079871A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +75,7 @@
 		D40D031D20B2660600E8FE38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D47A550720BE80A000AC5387 /* Easing.playground */,
 				D40D031E20B2660600E8FE38 /* AbemaAnimator.framework */,
 			);
 			name = Frameworks;
