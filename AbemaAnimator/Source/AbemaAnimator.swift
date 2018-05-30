@@ -6,10 +6,7 @@
 //  Copyright © 2018年 中澤 郁斗. All rights reserved.
 //
 
-import Foundation
 import UIKit
-
-
 
 final public class Animator {
 
