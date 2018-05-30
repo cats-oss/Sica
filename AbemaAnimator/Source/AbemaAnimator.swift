@@ -18,7 +18,7 @@ public final class Animator {
     private let view: UIView
     private let group = CAAnimationGroup()
     private var animations = [CAAnimation]()
-    private var canAnimate: Bool = true
+    private var isReadyAnimation: Bool = true
     
     public let key: String
 
@@ -44,7 +44,7 @@ public final class Animator {
     }
 
     public func delay(_ delay: Double = 0) -> Self {
-        if !canAnimate { return self }
+        if !isReadyAnimation { return self }
         group.beginTime = CACurrentMediaTime() + delay
         return self
     }
@@ -54,7 +54,7 @@ public final class Animator {
     }
 
     public func run(type: AnimationPlayType, isRemovedOnCompletion: Bool = false, completion: (() -> Void)? = nil) {
-        canAnimate = false
+        isReadyAnimation = false
 
         if case .sequence = type {
             calculateBeginTime()
@@ -77,7 +77,7 @@ public final class Animator {
     }
 
     public func addBasicAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, from: T, to: T, duration: Double, delay: Double = 0, timingFunction: TimingFunction = .default) -> Self {
-        if !canAnimate { return self }
+        if !isReadyAnimation { return self }
         let basicAnimation = CABasicAnimation(keyPath: keyPath.rawValue)
         basicAnimation.fromValue = from
         basicAnimation.toValue = to
@@ -88,7 +88,7 @@ public final class Animator {
     }
 
     public func addSpringAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, from: T, to: T, damping: CGFloat, mass: CGFloat, stiffness: CGFloat, initialVelocity: CGFloat, duration: Double, delay: Double = 0, timingFunction: TimingFunction = .default) -> Self {
-        if !canAnimate { return self }
+        if !isReadyAnimation { return self }
         let springAnimation = CASpringAnimation(keyPath: keyPath.rawValue)
         springAnimation.fromValue = from
         springAnimation.toValue = to
@@ -103,7 +103,7 @@ public final class Animator {
     }
 
     public func addTransitionAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, startProgress: Float, endProgress: Float, type: TransitionType, subtype: TransitionSubType, duration: Double, delay: Double = 0, timingFunction: TimingFunction = .default) -> Self {
-        if !canAnimate { return self }
+        if !isReadyAnimation { return self }
         let transitionAnimation = CATransition()
         transitionAnimation.startProgress = startProgress
         transitionAnimation.endProgress = endProgress
