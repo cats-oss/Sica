@@ -49,6 +49,12 @@ public final class Animator {
         return self
     }
 
+    public func forever(autoreverses: Bool = true) -> Self {
+        group.repeatCount = 1e100
+        group.autoreverses = autoreverses
+        return self
+    }
+
     public func cancel() {
         view.layer.removeAnimation(forKey: key)
     }
