@@ -43,7 +43,7 @@ public final class Animator {
         }
     }
 
-    public func delay(_ delay: Double = 0) -> Self {
+    public func delay(_ delay: Double) -> Self {
         if !isReadyAnimation { return self }
         group.beginTime = CACurrentMediaTime() + delay
         return self
