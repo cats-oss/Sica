@@ -3,6 +3,9 @@ disabled_rules:
 - type_name
 - function_parameter_count
 
+excluded:
+- EasingFunctions.playground
+
 line_length: 300
 
 type_body_length:
