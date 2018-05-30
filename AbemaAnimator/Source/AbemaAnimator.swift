@@ -53,7 +53,7 @@ public final class Animator {
         view.layer.removeAnimation(forKey: key)
     }
 
-    public func run(type: AnimationPlayType, completion: (() -> Void)? = nil) {
+    public func run(type: AnimationPlayType, isRemovedOnCompletion: Bool = false, completion: (() -> Void)? = nil) {
         canAnimate = false
 
         if case .sequence = type {
@@ -62,7 +62,7 @@ public final class Animator {
         group.animations = animations
         group.duration = totalDuration(type: type)
         group.fillMode = kCAFillModeForwards
-        group.isRemovedOnCompletion = false
+        group.isRemovedOnCompletion = isRemovedOnCompletion
 
         if let completion = completion {
             CATransaction.begin()

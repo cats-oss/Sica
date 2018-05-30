@@ -9,11 +9,11 @@
 import QuartzCore
 
 extension CAAnimation {
-    func configure(delay: Double, duration: Double, timingFunction: TimingFunction) {
+    func configure(delay: Double, duration: Double, timingFunction: TimingFunction, isRemovedOnCompletion: Bool = false) {
         self.beginTime = delay
         self.duration = duration
         self.timingFunction = timingFunction.rawValue
         self.fillMode = kCAFillModeForwards
-        self.isRemovedOnCompletion = false
+        self.isRemovedOnCompletion = isRemovedOnCompletion
     }
 }
