@@ -11,8 +11,8 @@ import UIKit
 public final class Animator {
 
     public enum AnimationPlayType {
-        case sequence
-        case parallel
+        case sequence // run animation sequentially
+        case parallel // run animation parallelly
     }
 
     private let view: UIView
