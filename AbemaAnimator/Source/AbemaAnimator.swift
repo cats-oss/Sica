@@ -8,7 +8,7 @@
 
 import UIKit
 
-final public class Animator {
+public final class Animator {
 
     public enum AnimationPlayType {
         case sequence
