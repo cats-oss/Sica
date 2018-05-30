@@ -11,7 +11,7 @@
 		D4A60FF220ABC9890079871A /* AbemaAnimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A60FF120ABC9890079871A /* AbemaAnimatorTests.swift */; };
 		D4A60FF420ABC9890079871A /* AbemaAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A60FE620ABC9890079871A /* AbemaAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4CB78CA20AC2BDD003232F6 /* CAAnimation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C120AC2BDD003232F6 /* CAAnimation+Extension.swift */; };
-		D4CB78CB20AC2BDD003232F6 /* TransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C220AC2BDD003232F6 /* TransitionType.swift */; };
+		D4CB78CB20AC2BDD003232F6 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C220AC2BDD003232F6 /* Transition.swift */; };
 		D4CB78CD20AC2BDD003232F6 /* AbemaAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C420AC2BDD003232F6 /* AbemaAnimator.swift */; };
 		D4CB78CE20AC2BDD003232F6 /* AnimationKeyPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C520AC2BDD003232F6 /* AnimationKeyPaths.swift */; };
 		D4CB78CF20AC2BDD003232F6 /* TimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C620AC2BDD003232F6 /* TimingFunction.swift */; };
@@ -35,7 +35,7 @@
 		D4A60FF120ABC9890079871A /* AbemaAnimatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbemaAnimatorTests.swift; sourceTree = "<group>"; };
 		D4A60FF320ABC9890079871A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4CB78C120AC2BDD003232F6 /* CAAnimation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAAnimation+Extension.swift"; sourceTree = "<group>"; };
-		D4CB78C220AC2BDD003232F6 /* TransitionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionType.swift; sourceTree = "<group>"; };
+		D4CB78C220AC2BDD003232F6 /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		D4CB78C420AC2BDD003232F6 /* AbemaAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbemaAnimator.swift; sourceTree = "<group>"; };
 		D4CB78C520AC2BDD003232F6 /* AnimationKeyPaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationKeyPaths.swift; sourceTree = "<group>"; };
 		D4CB78C620AC2BDD003232F6 /* TimingFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimingFunction.swift; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 				D4CB78C520AC2BDD003232F6 /* AnimationKeyPaths.swift */,
 				D4CB78C120AC2BDD003232F6 /* CAAnimation+Extension.swift */,
 				D4CB78C620AC2BDD003232F6 /* TimingFunction.swift */,
-				D4CB78C220AC2BDD003232F6 /* TransitionType.swift */,
+				D4CB78C220AC2BDD003232F6 /* Transition.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -236,7 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4CB78CF20AC2BDD003232F6 /* TimingFunction.swift in Sources */,
-				D4CB78CB20AC2BDD003232F6 /* TransitionType.swift in Sources */,
+				D4CB78CB20AC2BDD003232F6 /* Transition.swift in Sources */,
 				D4CB78CA20AC2BDD003232F6 /* CAAnimation+Extension.swift in Sources */,
 				D4CB78CD20AC2BDD003232F6 /* AbemaAnimator.swift in Sources */,
 				D4CB78CE20AC2BDD003232F6 /* AnimationKeyPaths.swift in Sources */,

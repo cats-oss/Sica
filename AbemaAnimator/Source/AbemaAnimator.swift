@@ -108,7 +108,7 @@ public final class Animator {
         return self
     }
 
-    public func addTransitionAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, startProgress: Float, endProgress: Float, type: TransitionType, subtype: TransitionSubType, duration: Double, delay: Double = 0, timingFunction: TimingFunction = .default) -> Self {
+    public func addTransitionAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, startProgress: Float, endProgress: Float, type: Transition, subtype: TransitionSub, duration: Double, delay: Double = 0, timingFunction: TimingFunction = .default) -> Self {
         if !isReadyAnimation { return self }
         let transitionAnimation = CATransition()
         transitionAnimation.startProgress = startProgress
