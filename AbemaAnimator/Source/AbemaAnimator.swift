@@ -27,7 +27,7 @@ public final class Animator {
         self.key = key ?? UUID().uuidString
     }
 
-    private func sequence() {
+    private func calculateBeginTime() {
         for (i, anim) in animations.enumerated() where i > 0 {
             let prev = animations[i - 1]
             anim.beginTime += prev.beginTime + prev.duration
@@ -57,7 +57,7 @@ public final class Animator {
         canAnimate = false
 
         if case .sequence = type {
-            sequence()
+            calculateBeginTime()
         }
         group.animations = animations
         group.duration = totalDuration(type: type)
