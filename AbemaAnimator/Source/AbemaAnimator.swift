@@ -76,9 +76,7 @@ public final class Animator {
 
         if let completion = completion {
             CATransaction.begin()
-            CATransaction.setCompletionBlock { [weak self] in
-                guard let me = self else { return }
-                me.isCompleted = true
+            CATransaction.setCompletionBlock {
                 completion()
             }
             view.layer.add(group, forKey: key)
@@ -86,6 +84,7 @@ public final class Animator {
         } else {
             view.layer.add(group, forKey: key)
         }
+        isCompleted = true
     }
 
     public func addBasicAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, from: T, to: T, duration: Double, delay: Double = 0, timingFunction: TimingFunction = .default) -> Self {
