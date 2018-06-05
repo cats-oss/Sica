@@ -1,5 +1,5 @@
 # AbemaAnimator
-AbemaAnimator is CAAnimation wrapper animator
+AbemaAnimator can execute various animations sequentially or parallely
 
 ## Usage
 
