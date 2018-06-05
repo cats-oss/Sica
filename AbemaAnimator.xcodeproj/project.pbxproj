@@ -10,6 +10,11 @@
 		D4A60FED20ABC9890079871A /* AbemaAnimator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A60FE320ABC9890079871A /* AbemaAnimator.framework */; };
 		D4A60FF220ABC9890079871A /* AbemaAnimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A60FF120ABC9890079871A /* AbemaAnimatorTests.swift */; };
 		D4A60FF420ABC9890079871A /* AbemaAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A60FE620ABC9890079871A /* AbemaAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4CB78CA20AC2BDD003232F6 /* CAAnimation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C120AC2BDD003232F6 /* CAAnimation+Extension.swift */; };
+		D4CB78CB20AC2BDD003232F6 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C220AC2BDD003232F6 /* Transition.swift */; };
+		D4CB78CD20AC2BDD003232F6 /* AbemaAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C420AC2BDD003232F6 /* AbemaAnimator.swift */; };
+		D4CB78CE20AC2BDD003232F6 /* AnimationKeyPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C520AC2BDD003232F6 /* AnimationKeyPaths.swift */; };
+		D4CB78CF20AC2BDD003232F6 /* TimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C620AC2BDD003232F6 /* TimingFunction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		D4A60FEC20ABC9890079871A /* AbemaAnimatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbemaAnimatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A60FF120ABC9890079871A /* AbemaAnimatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbemaAnimatorTests.swift; sourceTree = "<group>"; };
 		D4A60FF320ABC9890079871A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4CB78C120AC2BDD003232F6 /* CAAnimation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAAnimation+Extension.swift"; sourceTree = "<group>"; };
+		D4CB78C220AC2BDD003232F6 /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		D4CB78C420AC2BDD003232F6 /* AbemaAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbemaAnimator.swift; sourceTree = "<group>"; };
+		D4CB78C520AC2BDD003232F6 /* AnimationKeyPaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationKeyPaths.swift; sourceTree = "<group>"; };
+		D4CB78C620AC2BDD003232F6 /* TimingFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimingFunction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,7 @@
 			children = (
 				D4A60FE620ABC9890079871A /* AbemaAnimator.h */,
 				D4A60FE720ABC9890079871A /* Info.plist */,
+				D4CB78C020AC2BDD003232F6 /* Source */,
 			);
 			path = AbemaAnimator;
 			sourceTree = "<group>";
@@ -84,6 +95,18 @@
 				D4A60FF320ABC9890079871A /* Info.plist */,
 			);
 			path = AbemaAnimatorTests;
+			sourceTree = "<group>";
+		};
+		D4CB78C020AC2BDD003232F6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D4CB78C420AC2BDD003232F6 /* AbemaAnimator.swift */,
+				D4CB78C520AC2BDD003232F6 /* AnimationKeyPaths.swift */,
+				D4CB78C120AC2BDD003232F6 /* CAAnimation+Extension.swift */,
+				D4CB78C620AC2BDD003232F6 /* TimingFunction.swift */,
+				D4CB78C220AC2BDD003232F6 /* Transition.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +131,7 @@
 				D4A60FDF20ABC9890079871A /* Frameworks */,
 				D4A60FE020ABC9890079871A /* Headers */,
 				D4A60FE120ABC9890079871A /* Resources */,
+				D42CFBF020BE4A4700A1A812 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -160,6 +184,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = D4A60FD920ABC9890079871A;
 			productRefGroup = D4A60FE420ABC9890079871A /* Products */;
@@ -189,11 +214,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D42CFBF020BE4A4700A1A812 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D4A60FDE20ABC9890079871A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4CB78CF20AC2BDD003232F6 /* TimingFunction.swift in Sources */,
+				D4CB78CB20AC2BDD003232F6 /* Transition.swift in Sources */,
+				D4CB78CA20AC2BDD003232F6 /* CAAnimation+Extension.swift in Sources */,
+				D4CB78CD20AC2BDD003232F6 /* AbemaAnimator.swift in Sources */,
+				D4CB78CE20AC2BDD003232F6 /* AnimationKeyPaths.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +435,7 @@
 		D4A60FFB20ABC9890079871A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WBG4CW8NGK;
 				INFOPLIST_FILE = AbemaAnimatorTests/Info.plist;
@@ -407,6 +454,7 @@
 		D4A60FFC20ABC9890079871A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WBG4CW8NGK;
 				INFOPLIST_FILE = AbemaAnimatorTests/Info.plist;
