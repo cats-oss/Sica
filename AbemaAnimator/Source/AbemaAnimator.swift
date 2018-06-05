@@ -127,3 +127,22 @@ public final class Animator {
         return self
     }
 }
+
+#if DEBUG
+extension Animator {
+    struct Test {
+        fileprivate let base: Animator
+        
+        var group: CAAnimationGroup {
+            return base.group
+        }
+        var animations: [CAAnimation] {
+            return base.animations
+        }
+    }
+
+    var test: Test {
+        return Test(base: self)
+    }
+}
+#endif
