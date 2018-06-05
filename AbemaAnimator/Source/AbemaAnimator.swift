@@ -21,8 +21,8 @@ public final class Animator {
     private let view: UIView
     private let group = CAAnimationGroup()
     private var animations = [CAAnimation]()
-    private var isReadyAnimation: Bool = false
-    
+    public private(set) var isCompleted: Bool = false
+
     public let key: String
 
     public init(view: UIView, forKey key: String? = nil) {
@@ -47,14 +47,14 @@ public final class Animator {
     }
 
     public func delay(_ delay: Double) -> Self {
-        if isReadyAnimation { return self }
+        if isCompleted { return self }
         let beginTime = delay < 0.0 ? 0.0 : delay
         group.beginTime = CACurrentMediaTime() + beginTime
         return self
     }
 
     public func forever(autoreverses: Bool = true) -> Self {
-        if isReadyAnimation { return self }
+        if isCompleted { return self }
         group.repeatCount = Float.greatestFiniteMagnitude
         group.autoreverses = autoreverses
         return self
@@ -78,7 +78,7 @@ public final class Animator {
             CATransaction.begin()
             CATransaction.setCompletionBlock { [weak self] in
                 guard let me = self else { return }
-                me.isReadyAnimation = true
+                me.isCompleted = true
                 completion()
             }
             view.layer.add(group, forKey: key)
@@ -89,7 +89,7 @@ public final class Animator {
     }
 
     public func addBasicAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, from: T, to: T, duration: Double, delay: Double = 0, timingFunction: TimingFunction = .default) -> Self {
-        if isReadyAnimation { return self }
+        if isCompleted { return self }
         let basicAnimation = CABasicAnimation(keyPath: keyPath.rawValue)
         basicAnimation.fromValue = from
         basicAnimation.toValue = to
@@ -100,7 +100,7 @@ public final class Animator {
     }
 
     public func addSpringAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, from: T, to: T, damping: CGFloat, mass: CGFloat, stiffness: CGFloat, initialVelocity: CGFloat, duration: Double, delay: Double = 0, timingFunction: TimingFunction = .default) -> Self {
-        if isReadyAnimation { return self }
+        if isCompleted { return self }
         let springAnimation = CASpringAnimation(keyPath: keyPath.rawValue)
         springAnimation.fromValue = from
         springAnimation.toValue = to
@@ -115,7 +115,7 @@ public final class Animator {
     }
 
     public func addTransitionAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, startProgress: Float, endProgress: Float, type: Transition, subtype: TransitionSub, duration: Double, delay: Double = 0, timingFunction: TimingFunction = .default) -> Self {
-        if isReadyAnimation { return self }
+        if isCompleted { return self }
         let transitionAnimation = CATransition()
         transitionAnimation.startProgress = startProgress
         transitionAnimation.endProgress = endProgress
