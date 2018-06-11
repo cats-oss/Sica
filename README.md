@@ -56,6 +56,40 @@ you can choose various timing functions
 
 ![EasingFunctions](resources/EasingFunctions.gif)
 
+## Requirements
+- Xcode 9.3
+- iOS 9 or greater
+
+
+## Installation
+
+### Carthage
+
+If you’re using [Carthage](https://github.com/Carthage/Carthage), simply add
+AbemaAnimator to your `Cartfile`:
+
+```ruby
+github "abema/AbemaAnimator"
+```
+
+### CocoaPods
+
+AbemaAnimator is available through [CocoaPods](https://cocoapods.org). To instal
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'AbemaAnimator'
+```
+
+### SwiftPackageManager
+AbemaAnimator is available through `SwiftPM`, create ` Package.swift` and add `dependencies` value
+```Package.swift
+dependencies: [
+    .package(url: "git@github.com:abema/AbemaAnimator.git", from: "1.0.0")
+]
+```
+See also: [GitHub - j-channings/swift-package-manager-ios: Example of how to use SPM v4 to manage iOS dependencies](https://github.com/j-channings/swift-package-manager-ios)
+
 
 ## License
 AbemaAnimator is available under the MIT license. See the LICENSE file for more info.
