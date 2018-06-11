@@ -76,9 +76,7 @@ public final class Animator {
 
         if let completion = completion {
             CATransaction.begin()
-            CATransaction.setCompletionBlock { [weak self] in
-                guard let me = self else { return }
-                me.isCompleted = true
+            CATransaction.setCompletionBlock {
                 completion()
             }
             view.layer.add(group, forKey: key)
@@ -86,6 +84,7 @@ public final class Animator {
         } else {
             view.layer.add(group, forKey: key)
         }
+        isCompleted = true
     }
 
     public func addBasicAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, from: T, to: T, duration: Double, delay: Double = 0, timingFunction: TimingFunction = .default) -> Self {
@@ -114,7 +113,7 @@ public final class Animator {
         return self
     }
 
-    public func addTransitionAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, startProgress: Float, endProgress: Float, type: Transition, subtype: TransitionSub, duration: Double, delay: Double = 0, timingFunction: TimingFunction = .default) -> Self {
+    public func addTransitionAnimation(startProgress: Float, endProgress: Float, type: Transition, subtype: TransitionSub, duration: Double, delay: Double = 0, timingFunction: TimingFunction = .default) -> Self {
         if isCompleted { return self }
         let transitionAnimation = CATransition()
         transitionAnimation.startProgress = startProgress
@@ -127,3 +126,22 @@ public final class Animator {
         return self
     }
 }
+
+#if DEBUG
+extension Animator {
+    struct Test {
+        fileprivate let base: Animator
+        
+        var group: CAAnimationGroup {
+            return base.group
+        }
+        var animations: [CAAnimation] {
+            return base.animations
+        }
+    }
+
+    var test: Test {
+        return Test(base: self)
+    }
+}
+#endif
