@@ -7,7 +7,7 @@ AbemaAnimator can execute various animations sequentially or parallely
 
 #### Sequence Animation
 ```swift
-let animator = Animator(view: sampleView, forKey: "sampleAnimation")
+let animator = Animator(view: sampleView)
 animator
     .addBasicAnimation(keyPath: .positionX, from: 50, to: 150, duration: 2, timingFunction: .easeOutExpo)
     .addSpringAnimation(keyPath: .boundsSize, from: sampleView.frame.size, to: CGSize(width: 240, height: 240), damping: 12, mass: 1, stiffness: 240, initialVelocity: 0, duration: 1)
@@ -18,7 +18,7 @@ animator
 
 #### Parallel Animation
 ```swift
-let animator = Animator(view: sampleView, forKey: "sampleAnimation")
+let animator = Animator(view: sampleView)
 animator
     .addBasicAnimation(keyPath: .positionX, from: 50, to: 150, duration: 5, timingFunction: .easeOutExpo)
     .addBasicAnimation(keyPath: .transformRotationZ, from: 0, to: CGFloat.pi, duration: 3, timingFunction: .easeOutExpo)
@@ -30,7 +30,7 @@ animator
 
 #### Forever Animation
 ```swift
-let animator = Animator(view: sampleView, forKey: "sampleAnimation")
+let animator = Animator(view: sampleView)
 animator
     .addBasicAnimation(keyPath: .positionX, from: 50, to: 150, duration: 2, timingFunction: .easeOutExpo)
     .addBasicAnimation(keyPath: .positionX, from: 150, to: 50, duration: 2, timingFunction: .easeOutExpo)
