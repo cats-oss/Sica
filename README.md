@@ -8,6 +8,13 @@
 
 AbemaAnimator can execute various animations sequentially or parallely
 
+## Features
+- Animation with duration and delay
+- parallel / sequence animation
+- Easings
+- Springs
+- Transition
+
 ## Usage
 
 ### Sample Animation
