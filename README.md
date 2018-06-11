@@ -81,7 +81,7 @@ it, simply add the following line to your Podfile:
 pod 'AbemaAnimator'
 ```
 
-### SwiftPackageManager
+### Swift Package Manager
 AbemaAnimator is available through `SwiftPM`, create ` Package.swift` and add `dependencies` value
 ```Package.swift
 dependencies: [
