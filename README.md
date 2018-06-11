@@ -1,4 +1,11 @@
 # AbemaAnimator
+[![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat)](https://developer.apple.com/iphone/index.action)
+[![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
+[![Version](https://img.shields.io/cocoapods/v/AbemaAnimator.svg?style=flat)](https://cocoapods.org/pods/AbemaAnimator)
+[![License](https://img.shields.io/cocoapods/l/AbemaAnimator.svg?style=flat)](https://cocoapods.org/pods/AbemaAnimator)
+
 AbemaAnimator can execute various animations sequentially or parallely
 
 ## Usage
