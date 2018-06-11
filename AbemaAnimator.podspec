@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.source       = { :git => "git@github.com:abema/AbemaAnimator.git", :tag => "#{s.version}" }
   s.source_files = "AbemaAnimator/**/*.{swift}"
-  s.swift_version = '4.0'
+  s.swift_version = '4.1'
 end
