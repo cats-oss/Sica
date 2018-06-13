@@ -127,4 +127,17 @@ class AbemaAnimatorTests: XCTestCase {
 
         XCTAssertEqual(animator.test.group.duration, 10)
     }
+
+    func testRemoveAll() {
+        animator
+            .addBasicAnimation(keyPath: .positionY, from: 0, to: 1, duration: 1)
+            .addBasicAnimation(keyPath: .positionY, from: 1, to: 0, duration: 10)
+            .addBasicAnimation(keyPath: .positionY, from: 0, to: 3, duration: 1)
+            .run(type: .parallel)
+        
+        _ = animator.removeAll()
+        XCTAssertEqual(animator.test.group.duration, 0)
+        XCTAssertEqual(animator.test.animations.count, 0)
+        XCTAssertEqual(animator.isCompleted, false)
+    }
 }
