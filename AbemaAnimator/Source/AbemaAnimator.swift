@@ -19,7 +19,7 @@ public final class Animator {
     }
 
     private let view: UIView
-    private let group = CAAnimationGroup()
+    private var group = CAAnimationGroup()
     private var animations = [CAAnimation]()
     public private(set) var isCompleted: Bool = false
 
@@ -57,6 +57,14 @@ public final class Animator {
         if isCompleted { return self }
         group.repeatCount = Float.greatestFiniteMagnitude
         group.autoreverses = autoreverses
+        return self
+    }
+
+    public func removeAll() -> Self {
+        view.layer.removeAllAnimations()
+        group = CAAnimationGroup()
+        animations = []
+        isCompleted = false
         return self
     }
 
