@@ -6,6 +6,7 @@
 //  Copyright © 2018年 中澤 郁斗. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
 public final class Animator {
@@ -134,6 +135,7 @@ public final class Animator {
         return self
     }
 }
+#endif
 
 #if DEBUG
 extension Animator {
