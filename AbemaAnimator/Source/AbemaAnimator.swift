@@ -18,7 +18,7 @@ public final class Animator {
         case parallel
     }
 
-    private let view: UIView
+    private weak var view: UIView?
     private let group = CAAnimationGroup()
     private var animations = [CAAnimation]()
     public private(set) var isCompleted: Bool = false
@@ -61,10 +61,12 @@ public final class Animator {
     }
 
     public func cancel() {
+        guard let view = self.view else { return }
         view.layer.removeAnimation(forKey: key)
     }
 
     public func run(type: AnimationPlayType, isRemovedOnCompletion: Bool = false, completion: (() -> Void)? = nil) {
+        guard let view = self.view else { return }
 
         if case .sequence = type {
             calculateBeginTime()
