@@ -70,6 +70,110 @@ you can choose various timing functions
 
 ![EasingFunctions](resources/EasingFunctions.gif)
 
+### KeyPaths Table
+|`AbemaAnimator`|`KeyPath`|
+|:-:|:-:|
+|`.anchorPoint`|`anchorPoint`|
+|`.backgroundColor`|`backgroundColor`|
+|`.borderColor`|`borderColor`|
+|`.borderWidth`|`borderWidth`|
+|`.bounds`|`bounds`|
+|`.contents`|`contents`|
+|`.contentsRect`|`contentsRect`|
+|`.cornerRadius`|`cornerRadius`|
+|`.filters`|`filters`|
+|`.frame`|`frame`|
+|`.hidden`|`hidden`|
+|`.mask`|`mask`|
+|`.masksToBounds`|`masksToBounds`|
+|`.opacity`|`opacity`|
+|`.path`|`path`|
+|`.position`|`position`|
+|`.shadowColor`|`shadowColor`|
+|`.shadowOffset`|`shadowOffset`|
+|`.shadowOpacity`|`shadowOpacity`|
+|`.shadowPath`|`shadowPath`|
+|`.shadowRadius`|`shadowRadius`|
+|`.sublayers`|`sublayers`|
+|`.sublayerTransform`|`sublayerTransform`|
+|`.transform`|`transform`|
+|`.zPosition`|`zPosition`|
+
+#### Anchor Point
+|`AbemaAnimator`|`KeyPath`|
+|:-:|:-:|
+|`.anchorPointX`|`anchorPoint.x`|
+|`.anchorPointy`|`anchorPoint.y`|
+
+#### Bounds
+|`AbemaAnimator`|`KeyPath`|
+|:-:|:-:|
+|`.boundsOrigin`|`bounds.origin`|
+|`.boundsOriginX`|`bounds.origin.x`|
+|`.boundsOriginY`|`bounds.origin.y`|
+|`.boundsSize`|`bounds.size`|
+|`.boundsSizeWidth`|`bounds.size.width`|
+|`.boundsSizeHeight`|`bounds.size.height`|
+
+#### Contents
+|`AbemaAnimator`|`KeyPath`|
+|:-:|:-:|
+|`.contentsRectOrigin`|`contentsRect.origin`|
+|`.contentsRectOriginX`|`contentsRect.origin.x`|
+|`.contentsRectOriginY`|`contentsRect.origin.y`|
+|`.contentsRectSize`|`contentsRect.size`|
+|`.contentsRectSizeWidth`|`contentsRect.size.width`|
+|`.contentsRectSizeHeight`|`contentsRect.size.height`|
+
+#### Frame
+|`AbemaAnimator`|`KeyPath`|
+|:-:|:-:|
+|`.frameOrigin`|`frame.origin`|
+|`.frameOriginX`|`frame.origin.x`|
+|`.frameOriginY`|`frame.origin.y`|
+|`.frameSize`|`frame.size`|
+|`.frameSizeWidth`|`frame.size.width`|
+|`.frameSizeHeight`|`frame.size.height`|
+
+#### Position
+|`AbemaAnimator`|`KeyPath`|
+|:-:|:-:|
+|`.positionX`|`position.x`|
+|`.positionY`|`position.y`|
+
+
+#### Shadow Offset
+|`AbemaAnimator`|`KeyPath`|
+|:-:|:-:|
+|`.shadowOffsetWidth`|`shadowOffset.width`|
+|`.shadowOffsetHeight`|`shadowOffset.height`|
+
+#### Sublayer Transform
+|`AbemaAnimator`|`KeyPath`|
+|:-:|:-:|
+|`.sublayerTransformRotationX`|`sublayerTransform.rotation.x`|
+|`.sublayerTransformRotationY`|`sublayerTransform.rotation.y`|
+|`.sublayerTransformRotationZ`|`sublayerTransform.rotation.z`|
+|`.sublayerTransformScaleX`|`sublayerTransform.scale.x`|
+|`.sublayerTransformScaleY`|`sublayerTransform.scale.y`|
+|`.sublayerTransformScaleZ`|`sublayerTransform.scale.z`|
+|`.sublayerTransformTranslationX`|`sublayerTransform.translation.x`|
+|`.sublayerTransformTranslationY`|`sublayerTransform.translation.y`|
+|`.sublayerTransformTranslationZ`|`sublayerTransform.translation.z`|
+
+#### Transform
+|`AbemaAnimator`|`KeyPath`|
+|:-:|:-:|
+|`.transformRotationX`|`transform.rotation.x`|
+|`.transformRotationY`|`transform.rotation.y`|
+|`.transformRotationZ`|`transform.rotation.z`|
+|`.transformScaleX`|`transform.scale.x`|
+|`.transformScaleY`|`transform.scale.y`|
+|`.transformScaleZ`|`transform.scale.z`|
+|`.transformTranslationX`|`transform.translation.x`|
+|`.transformTranslationY`|`transform.translation.y`|
+|`.transformTranslationZ`|`transform.translation.z`|
+
 ## Requirements
 - Xcode 9.3
 - iOS 9 or greater
