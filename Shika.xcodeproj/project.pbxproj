@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D4A60FED20ABC9890079871A /* AbemaAnimator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A60FE320ABC9890079871A /* AbemaAnimator.framework */; };
-		D4A60FF220ABC9890079871A /* AbemaAnimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A60FF120ABC9890079871A /* AbemaAnimatorTests.swift */; };
-		D4A60FF420ABC9890079871A /* AbemaAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A60FE620ABC9890079871A /* AbemaAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4A60FED20ABC9890079871A /* Shika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A60FE320ABC9890079871A /* Shika.framework */; };
+		D4A60FF220ABC9890079871A /* ShikaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A60FF120ABC9890079871A /* ShikaTests.swift */; };
+		D4A60FF420ABC9890079871A /* Shika.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A60FE620ABC9890079871A /* Shika.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4CB78CA20AC2BDD003232F6 /* CAAnimation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C120AC2BDD003232F6 /* CAAnimation+Extension.swift */; };
 		D4CB78CB20AC2BDD003232F6 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C220AC2BDD003232F6 /* Transition.swift */; };
-		D4CB78CD20AC2BDD003232F6 /* AbemaAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C420AC2BDD003232F6 /* AbemaAnimator.swift */; };
+		D4CB78CD20AC2BDD003232F6 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C420AC2BDD003232F6 /* Animator.swift */; };
 		D4CB78CE20AC2BDD003232F6 /* AnimationKeyPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C520AC2BDD003232F6 /* AnimationKeyPaths.swift */; };
 		D4CB78CF20AC2BDD003232F6 /* TimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C620AC2BDD003232F6 /* TimingFunction.swift */; };
 /* End PBXBuildFile section */
@@ -28,15 +28,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D4A60FE320ABC9890079871A /* AbemaAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AbemaAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4A60FE620ABC9890079871A /* AbemaAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbemaAnimator.h; sourceTree = "<group>"; };
+		D4A60FE320ABC9890079871A /* Shika.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shika.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A60FE620ABC9890079871A /* Shika.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shika.h; sourceTree = "<group>"; };
 		D4A60FE720ABC9890079871A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4A60FEC20ABC9890079871A /* AbemaAnimatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbemaAnimatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4A60FF120ABC9890079871A /* AbemaAnimatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbemaAnimatorTests.swift; sourceTree = "<group>"; };
+		D4A60FEC20ABC9890079871A /* ShikaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShikaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A60FF120ABC9890079871A /* ShikaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShikaTests.swift; sourceTree = "<group>"; };
 		D4A60FF320ABC9890079871A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4CB78C120AC2BDD003232F6 /* CAAnimation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAAnimation+Extension.swift"; sourceTree = "<group>"; };
 		D4CB78C220AC2BDD003232F6 /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
-		D4CB78C420AC2BDD003232F6 /* AbemaAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbemaAnimator.swift; sourceTree = "<group>"; };
+		D4CB78C420AC2BDD003232F6 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		D4CB78C520AC2BDD003232F6 /* AnimationKeyPaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationKeyPaths.swift; sourceTree = "<group>"; };
 		D4CB78C620AC2BDD003232F6 /* TimingFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimingFunction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4A60FED20ABC9890079871A /* AbemaAnimator.framework in Frameworks */,
+				D4A60FED20ABC9890079871A /* Shika.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,8 +63,8 @@
 		D4A60FD920ABC9890079871A = {
 			isa = PBXGroup;
 			children = (
-				D4A60FE520ABC9890079871A /* AbemaAnimator */,
-				D4A60FF020ABC9890079871A /* AbemaAnimatorTests */,
+				D4A60FE520ABC9890079871A /* Shika */,
+				D4A60FF020ABC9890079871A /* ShikaTests */,
 				D4A60FE420ABC9890079871A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,35 +72,35 @@
 		D4A60FE420ABC9890079871A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4A60FE320ABC9890079871A /* AbemaAnimator.framework */,
-				D4A60FEC20ABC9890079871A /* AbemaAnimatorTests.xctest */,
+				D4A60FE320ABC9890079871A /* Shika.framework */,
+				D4A60FEC20ABC9890079871A /* ShikaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D4A60FE520ABC9890079871A /* AbemaAnimator */ = {
+		D4A60FE520ABC9890079871A /* Shika */ = {
 			isa = PBXGroup;
 			children = (
-				D4A60FE620ABC9890079871A /* AbemaAnimator.h */,
+				D4A60FE620ABC9890079871A /* Shika.h */,
 				D4A60FE720ABC9890079871A /* Info.plist */,
 				D4CB78C020AC2BDD003232F6 /* Source */,
 			);
-			path = AbemaAnimator;
+			path = Shika;
 			sourceTree = "<group>";
 		};
-		D4A60FF020ABC9890079871A /* AbemaAnimatorTests */ = {
+		D4A60FF020ABC9890079871A /* ShikaTests */ = {
 			isa = PBXGroup;
 			children = (
-				D4A60FF120ABC9890079871A /* AbemaAnimatorTests.swift */,
+				D4A60FF120ABC9890079871A /* ShikaTests.swift */,
 				D4A60FF320ABC9890079871A /* Info.plist */,
 			);
-			path = AbemaAnimatorTests;
+			path = ShikaTests;
 			sourceTree = "<group>";
 		};
 		D4CB78C020AC2BDD003232F6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D4CB78C420AC2BDD003232F6 /* AbemaAnimator.swift */,
+				D4CB78C420AC2BDD003232F6 /* Animator.swift */,
 				D4CB78C520AC2BDD003232F6 /* AnimationKeyPaths.swift */,
 				D4CB78C120AC2BDD003232F6 /* CAAnimation+Extension.swift */,
 				D4CB78C620AC2BDD003232F6 /* TimingFunction.swift */,
@@ -116,16 +116,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4A60FF420ABC9890079871A /* AbemaAnimator.h in Headers */,
+				D4A60FF420ABC9890079871A /* Shika.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D4A60FE220ABC9890079871A /* AbemaAnimator */ = {
+		D4A60FE220ABC9890079871A /* Shika */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4A60FF720ABC9890079871A /* Build configuration list for PBXNativeTarget "AbemaAnimator" */;
+			buildConfigurationList = D4A60FF720ABC9890079871A /* Build configuration list for PBXNativeTarget "Shika" */;
 			buildPhases = (
 				D4A60FDE20ABC9890079871A /* Sources */,
 				D4A60FDF20ABC9890079871A /* Frameworks */,
@@ -137,14 +137,14 @@
 			);
 			dependencies = (
 			);
-			name = AbemaAnimator;
+			name = Shika;
 			productName = AbemaAnimator;
-			productReference = D4A60FE320ABC9890079871A /* AbemaAnimator.framework */;
+			productReference = D4A60FE320ABC9890079871A /* Shika.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D4A60FEB20ABC9890079871A /* AbemaAnimatorTests */ = {
+		D4A60FEB20ABC9890079871A /* ShikaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4A60FFA20ABC9890079871A /* Build configuration list for PBXNativeTarget "AbemaAnimatorTests" */;
+			buildConfigurationList = D4A60FFA20ABC9890079871A /* Build configuration list for PBXNativeTarget "ShikaTests" */;
 			buildPhases = (
 				D4A60FE820ABC9890079871A /* Sources */,
 				D4A60FE920ABC9890079871A /* Frameworks */,
@@ -155,9 +155,9 @@
 			dependencies = (
 				D4A60FEF20ABC9890079871A /* PBXTargetDependency */,
 			);
-			name = AbemaAnimatorTests;
+			name = ShikaTests;
 			productName = AbemaAnimatorTests;
-			productReference = D4A60FEC20ABC9890079871A /* AbemaAnimatorTests.xctest */;
+			productReference = D4A60FEC20ABC9890079871A /* ShikaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -178,7 +178,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D4A60FDD20ABC9890079871A /* Build configuration list for PBXProject "AbemaAnimator" */;
+			buildConfigurationList = D4A60FDD20ABC9890079871A /* Build configuration list for PBXProject "Shika" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -191,8 +191,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4A60FE220ABC9890079871A /* AbemaAnimator */,
-				D4A60FEB20ABC9890079871A /* AbemaAnimatorTests */,
+				D4A60FE220ABC9890079871A /* Shika */,
+				D4A60FEB20ABC9890079871A /* ShikaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,7 +238,7 @@
 				D4CB78CF20AC2BDD003232F6 /* TimingFunction.swift in Sources */,
 				D4CB78CB20AC2BDD003232F6 /* Transition.swift in Sources */,
 				D4CB78CA20AC2BDD003232F6 /* CAAnimation+Extension.swift in Sources */,
-				D4CB78CD20AC2BDD003232F6 /* AbemaAnimator.swift in Sources */,
+				D4CB78CD20AC2BDD003232F6 /* Animator.swift in Sources */,
 				D4CB78CE20AC2BDD003232F6 /* AnimationKeyPaths.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,7 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4A60FF220ABC9890079871A /* AbemaAnimatorTests.swift in Sources */,
+				D4A60FF220ABC9890079871A /* ShikaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +256,7 @@
 /* Begin PBXTargetDependency section */
 		D4A60FEF20ABC9890079871A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D4A60FE220ABC9890079871A /* AbemaAnimator */;
+			target = D4A60FE220ABC9890079871A /* Shika */;
 			targetProxy = D4A60FEE20ABC9890079871A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -392,7 +392,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AbemaAnimator/Info.plist;
+				INFOPLIST_FILE = Shika/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -400,7 +400,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.AbemaAnimator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.shika;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -418,7 +418,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AbemaAnimator/Info.plist;
+				INFOPLIST_FILE = Shika/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -426,7 +426,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.AbemaAnimator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.shika;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -440,13 +440,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WBG4CW8NGK;
-				INFOPLIST_FILE = AbemaAnimatorTests/Info.plist;
+				INFOPLIST_FILE = ShikaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.AbemaAnimatorTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.ShikaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -459,13 +459,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WBG4CW8NGK;
-				INFOPLIST_FILE = AbemaAnimatorTests/Info.plist;
+				INFOPLIST_FILE = ShikaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.AbemaAnimatorTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.ShikaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -475,7 +475,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D4A60FDD20ABC9890079871A /* Build configuration list for PBXProject "AbemaAnimator" */ = {
+		D4A60FDD20ABC9890079871A /* Build configuration list for PBXProject "Shika" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4A60FF520ABC9890079871A /* Debug */,
@@ -484,7 +484,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4A60FF720ABC9890079871A /* Build configuration list for PBXNativeTarget "AbemaAnimator" */ = {
+		D4A60FF720ABC9890079871A /* Build configuration list for PBXNativeTarget "Shika" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4A60FF820ABC9890079871A /* Debug */,
@@ -493,7 +493,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4A60FFA20ABC9890079871A /* Build configuration list for PBXNativeTarget "AbemaAnimatorTests" */ = {
+		D4A60FFA20ABC9890079871A /* Build configuration list for PBXNativeTarget "ShikaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4A60FFB20ABC9890079871A /* Debug */,

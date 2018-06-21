@@ -1,6 +1,6 @@
 import Foundation
 import UIKit
-import AbemaAnimator
+import Shika
 
 public class EasingCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 

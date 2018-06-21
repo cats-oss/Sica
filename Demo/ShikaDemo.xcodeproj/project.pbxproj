@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D40D031F20B2660600E8FE38 /* AbemaAnimator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40D031E20B2660600E8FE38 /* AbemaAnimator.framework */; };
+		D48A812820DBB11100CB29ED /* Shika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48A812720DBB11100CB29ED /* Shika.framework */; };
 		D4A6100A20ABCA370079871A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A6100920ABCA370079871A /* AppDelegate.swift */; };
 		D4A6100C20ABCA370079871A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A6100B20ABCA370079871A /* ViewController.swift */; };
 		D4A6100F20ABCA370079871A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A6100D20ABCA370079871A /* Main.storyboard */; };
@@ -35,15 +35,16 @@
 /* Begin PBXFileReference section */
 		D40D031E20B2660600E8FE38 /* AbemaAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AbemaAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47A550720BE80A000AC5387 /* Easing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Easing.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		D4A6100620ABCA370079871A /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48A812720DBB11100CB29ED /* Shika.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Shika.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A6100620ABCA370079871A /* ShikaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShikaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A6100920ABCA370079871A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4A6100B20ABCA370079871A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D4A6100E20ABCA370079871A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4A6101020ABCA390079871A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4A6101320ABCA390079871A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4A6101520ABCA390079871A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4A6101A20ABCA390079871A /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4A6102520ABCA390079871A /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A6101A20ABCA390079871A /* ShikaDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShikaDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A6102520ABCA390079871A /* ShikaDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShikaDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D40D031F20B2660600E8FE38 /* AbemaAnimator.framework in Frameworks */,
+				D48A812820DBB11100CB29ED /* Shika.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +76,7 @@
 		D40D031D20B2660600E8FE38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D48A812720DBB11100CB29ED /* Shika.framework */,
 				D47A550720BE80A000AC5387 /* Easing.playground */,
 				D40D031E20B2660600E8FE38 /* AbemaAnimator.framework */,
 			);
@@ -84,7 +86,7 @@
 		D4A60FFD20ABCA370079871A = {
 			isa = PBXGroup;
 			children = (
-				D4A6100820ABCA370079871A /* Demo */,
+				D4A6100820ABCA370079871A /* ShikaDemo */,
 				D4A6100720ABCA370079871A /* Products */,
 				D40D031D20B2660600E8FE38 /* Frameworks */,
 			);
@@ -93,14 +95,14 @@
 		D4A6100720ABCA370079871A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4A6100620ABCA370079871A /* Demo.app */,
-				D4A6101A20ABCA390079871A /* DemoTests.xctest */,
-				D4A6102520ABCA390079871A /* DemoUITests.xctest */,
+				D4A6100620ABCA370079871A /* ShikaDemo.app */,
+				D4A6101A20ABCA390079871A /* ShikaDemoTests.xctest */,
+				D4A6102520ABCA390079871A /* ShikaDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D4A6100820ABCA370079871A /* Demo */ = {
+		D4A6100820ABCA370079871A /* ShikaDemo */ = {
 			isa = PBXGroup;
 			children = (
 				D4A6100920ABCA370079871A /* AppDelegate.swift */,
@@ -110,15 +112,15 @@
 				D4A6100D20ABCA370079871A /* Main.storyboard */,
 				D4A6100B20ABCA370079871A /* ViewController.swift */,
 			);
-			path = Demo;
+			path = ShikaDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D4A6100520ABCA370079871A /* Demo */ = {
+		D4A6100520ABCA370079871A /* ShikaDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4A6102E20ABCA390079871A /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildConfigurationList = D4A6102E20ABCA390079871A /* Build configuration list for PBXNativeTarget "ShikaDemo" */;
 			buildPhases = (
 				D4A6100220ABCA370079871A /* Sources */,
 				D4A6100320ABCA370079871A /* Frameworks */,
@@ -128,14 +130,14 @@
 			);
 			dependencies = (
 			);
-			name = Demo;
+			name = ShikaDemo;
 			productName = Demo;
-			productReference = D4A6100620ABCA370079871A /* Demo.app */;
+			productReference = D4A6100620ABCA370079871A /* ShikaDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D4A6101920ABCA390079871A /* DemoTests */ = {
+		D4A6101920ABCA390079871A /* ShikaDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4A6103120ABCA390079871A /* Build configuration list for PBXNativeTarget "DemoTests" */;
+			buildConfigurationList = D4A6103120ABCA390079871A /* Build configuration list for PBXNativeTarget "ShikaDemoTests" */;
 			buildPhases = (
 				D4A6101620ABCA390079871A /* Sources */,
 				D4A6101720ABCA390079871A /* Frameworks */,
@@ -146,14 +148,14 @@
 			dependencies = (
 				D4A6101C20ABCA390079871A /* PBXTargetDependency */,
 			);
-			name = DemoTests;
+			name = ShikaDemoTests;
 			productName = DemoTests;
-			productReference = D4A6101A20ABCA390079871A /* DemoTests.xctest */;
+			productReference = D4A6101A20ABCA390079871A /* ShikaDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D4A6102420ABCA390079871A /* DemoUITests */ = {
+		D4A6102420ABCA390079871A /* ShikaDemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4A6103420ABCA390079871A /* Build configuration list for PBXNativeTarget "DemoUITests" */;
+			buildConfigurationList = D4A6103420ABCA390079871A /* Build configuration list for PBXNativeTarget "ShikaDemoUITests" */;
 			buildPhases = (
 				D4A6102120ABCA390079871A /* Sources */,
 				D4A6102220ABCA390079871A /* Frameworks */,
@@ -164,9 +166,9 @@
 			dependencies = (
 				D4A6102720ABCA390079871A /* PBXTargetDependency */,
 			);
-			name = DemoUITests;
+			name = ShikaDemoUITests;
 			productName = DemoUITests;
-			productReference = D4A6102520ABCA390079871A /* DemoUITests.xctest */;
+			productReference = D4A6102520ABCA390079871A /* ShikaDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -192,7 +194,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D4A6100120ABCA370079871A /* Build configuration list for PBXProject "Demo" */;
+			buildConfigurationList = D4A6100120ABCA370079871A /* Build configuration list for PBXProject "ShikaDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -205,9 +207,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4A6100520ABCA370079871A /* Demo */,
-				D4A6101920ABCA390079871A /* DemoTests */,
-				D4A6102420ABCA390079871A /* DemoUITests */,
+				D4A6100520ABCA370079871A /* ShikaDemo */,
+				D4A6101920ABCA390079871A /* ShikaDemoTests */,
+				D4A6102420ABCA390079871A /* ShikaDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -268,12 +270,12 @@
 /* Begin PBXTargetDependency section */
 		D4A6101C20ABCA390079871A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D4A6100520ABCA370079871A /* Demo */;
+			target = D4A6100520ABCA370079871A /* ShikaDemo */;
 			targetProxy = D4A6101B20ABCA390079871A /* PBXContainerItemProxy */;
 		};
 		D4A6102720ABCA390079871A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D4A6100520ABCA370079871A /* Demo */;
+			target = D4A6100520ABCA370079871A /* ShikaDemo */;
 			targetProxy = D4A6102620ABCA390079871A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -418,12 +420,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WBG4CW8NGK;
-				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_FILE = ShikaDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.ShikaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -436,12 +438,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WBG4CW8NGK;
-				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_FILE = ShikaDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.ShikaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,17 +457,17 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WBG4CW8NGK;
-				INFOPLIST_FILE = DemoTests/Info.plist;
+				INFOPLIST_FILE = ShikaDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.DemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.ShikaDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShikaDemo.app/ShikaDemo";
 			};
 			name = Debug;
 		};
@@ -476,17 +478,17 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WBG4CW8NGK;
-				INFOPLIST_FILE = DemoTests/Info.plist;
+				INFOPLIST_FILE = ShikaDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.DemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.ShikaDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShikaDemo.app/ShikaDemo";
 			};
 			name = Release;
 		};
@@ -496,17 +498,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WBG4CW8NGK;
-				INFOPLIST_FILE = DemoUITests/Info.plist;
+				INFOPLIST_FILE = ShikaDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.DemoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.ShikaDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Demo;
+				TEST_TARGET_NAME = ShikaDemo;
 			};
 			name = Debug;
 		};
@@ -516,24 +518,24 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WBG4CW8NGK;
-				INFOPLIST_FILE = DemoUITests/Info.plist;
+				INFOPLIST_FILE = ShikaDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.DemoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.ShikaDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Demo;
+				TEST_TARGET_NAME = ShikaDemo;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D4A6100120ABCA370079871A /* Build configuration list for PBXProject "Demo" */ = {
+		D4A6100120ABCA370079871A /* Build configuration list for PBXProject "ShikaDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4A6102C20ABCA390079871A /* Debug */,
@@ -542,7 +544,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4A6102E20ABCA390079871A /* Build configuration list for PBXNativeTarget "Demo" */ = {
+		D4A6102E20ABCA390079871A /* Build configuration list for PBXNativeTarget "ShikaDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4A6102F20ABCA390079871A /* Debug */,
@@ -551,7 +553,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4A6103120ABCA390079871A /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
+		D4A6103120ABCA390079871A /* Build configuration list for PBXNativeTarget "ShikaDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4A6103220ABCA390079871A /* Debug */,
@@ -560,7 +562,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4A6103420ABCA390079871A /* Build configuration list for PBXNativeTarget "DemoUITests" */ = {
+		D4A6103420ABCA390079871A /* Build configuration list for PBXNativeTarget "ShikaDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4A6103520ABCA390079871A /* Debug */,

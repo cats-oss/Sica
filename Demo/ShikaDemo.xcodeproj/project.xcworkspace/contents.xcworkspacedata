@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../AbemaAnimator.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "self:">
+      location = "self:/Users/s02223/Desktop/TestProjects/AbemaAnimator/Demo/ShikaDemo.xcodeproj">
    </FileRef>
 </Workspace>

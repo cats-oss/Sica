@@ -7,7 +7,7 @@ let package = Package(
     products: [
         .library(
             name: "AbemaAnimator",
-            targets: ["AbemaAnimator"]),
+            targets: ["AbemaAnimator"])
         ],
     targets: [
         .target(

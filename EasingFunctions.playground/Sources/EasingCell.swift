@@ -1,5 +1,5 @@
 import UIKit
-import AbemaAnimator
+import Shika
 
 class EasingCell: UICollectionViewCell {
     

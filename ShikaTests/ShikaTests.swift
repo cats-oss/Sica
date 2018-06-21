@@ -1,15 +1,15 @@
 //
-//  AbemaAnimatorTests.swift
-//  AbemaAnimatorTests
+//  ShikaTests.swift
+//  ShikaTests
 //
 //  Created by 中澤 郁斗 on 2018/05/16.
 //  Copyright © 2018年 中澤 郁斗. All rights reserved.
 //
 
 import XCTest
-@testable import AbemaAnimator
+@testable import Shika
 
-class AbemaAnimatorTests: XCTestCase {
+class ShikaTests: XCTestCase {
     var animator = Animator(view: UIView())
     
     override func setUp() {
