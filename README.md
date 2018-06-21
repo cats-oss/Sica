@@ -53,6 +53,15 @@ animator
 ```
 ![Forever](resources/forever.gif)
 
+#### Cancel
+If you want to cancel animation, you should call `cancel`.
+```swift
+let animator = Animator(view: sampleView)
+/*
+Add animation and run
+*/
+animator.cancel() // Animation cancel
+```
 
 ## Functions
 ### Add Animation
