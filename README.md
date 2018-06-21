@@ -71,7 +71,7 @@ you can choose various timing functions
 ![EasingFunctions](resources/EasingFunctions.gif)
 
 ### KeyPaths Table
-|`AbemaAnimator`|`KeyPath`|
+|AbemaAnimator|KeyPath|
 |:-:|:-:|
 |`.anchorPoint`|`anchorPoint`|
 |`.backgroundColor`|`backgroundColor`|
@@ -100,13 +100,13 @@ you can choose various timing functions
 |`.zPosition`|`zPosition`|
 
 #### Anchor Point
-|`AbemaAnimator`|`KeyPath`|
+|AbemaAnimator|KeyPath|
 |:-:|:-:|
 |`.anchorPointX`|`anchorPoint.x`|
 |`.anchorPointy`|`anchorPoint.y`|
 
 #### Bounds
-|`AbemaAnimator`|`KeyPath`|
+|AbemaAnimator|KeyPath|
 |:-:|:-:|
 |`.boundsOrigin`|`bounds.origin`|
 |`.boundsOriginX`|`bounds.origin.x`|
@@ -116,7 +116,7 @@ you can choose various timing functions
 |`.boundsSizeHeight`|`bounds.size.height`|
 
 #### Contents
-|`AbemaAnimator`|`KeyPath`|
+|AbemaAnimator|KeyPath|
 |:-:|:-:|
 |`.contentsRectOrigin`|`contentsRect.origin`|
 |`.contentsRectOriginX`|`contentsRect.origin.x`|
@@ -126,7 +126,7 @@ you can choose various timing functions
 |`.contentsRectSizeHeight`|`contentsRect.size.height`|
 
 #### Frame
-|`AbemaAnimator`|`KeyPath`|
+|AbemaAnimator|KeyPath|
 |:-:|:-:|
 |`.frameOrigin`|`frame.origin`|
 |`.frameOriginX`|`frame.origin.x`|
@@ -136,20 +136,20 @@ you can choose various timing functions
 |`.frameSizeHeight`|`frame.size.height`|
 
 #### Position
-|`AbemaAnimator`|`KeyPath`|
+|AbemaAnimator|KeyPath|
 |:-:|:-:|
 |`.positionX`|`position.x`|
 |`.positionY`|`position.y`|
 
 
 #### Shadow Offset
-|`AbemaAnimator`|`KeyPath`|
+|AbemaAnimator|KeyPath|
 |:-:|:-:|
 |`.shadowOffsetWidth`|`shadowOffset.width`|
 |`.shadowOffsetHeight`|`shadowOffset.height`|
 
 #### Sublayer Transform
-|`AbemaAnimator`|`KeyPath`|
+|AbemaAnimator|KeyPath|
 |:-:|:-:|
 |`.sublayerTransformRotationX`|`sublayerTransform.rotation.x`|
 |`.sublayerTransformRotationY`|`sublayerTransform.rotation.y`|
@@ -162,7 +162,7 @@ you can choose various timing functions
 |`.sublayerTransformTranslationZ`|`sublayerTransform.translation.z`|
 
 #### Transform
-|`AbemaAnimator`|`KeyPath`|
+|AbemaAnimator|KeyPath|
 |:-:|:-:|
 |`.transformRotationX`|`transform.rotation.x`|
 |`.transformRotationY`|`transform.rotation.y`|
