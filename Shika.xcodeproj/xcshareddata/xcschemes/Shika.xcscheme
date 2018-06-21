@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D4A60FEB20ABC9890079871A"
+               BuildableName = "ShikaTests.xctest"
+               BlueprintName = "ShikaTests"
+               ReferencedContainer = "container:Shika.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D4A60FE220ABC9890079871A"
+            BuildableName = "Shika.framework"
+            BlueprintName = "Shika"
+            ReferencedContainer = "container:Shika.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
