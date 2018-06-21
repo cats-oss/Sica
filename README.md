@@ -266,4 +266,4 @@ you can choose various timing functions
 
 
 ## License
-Shika is available under the MIT license. See the LICENSE file for more info.
+Shika is available under the MIT license. See the [LICENSE file](https://github.com/cats-oss/Shika/blob/master/LICENSE) for more info.
