@@ -6,7 +6,7 @@
 [![Version](https://img.shields.io/cocoapods/v/AbemaAnimator.svg?style=flat)](https://cocoapods.org/pods/AbemaAnimator)
 [![License](https://img.shields.io/cocoapods/l/AbemaAnimator.svg?style=flat)](https://cocoapods.org/pods/AbemaAnimator)
 
-AbemaAnimator can execute various animations sequentially or parallely
+AbemaAnimator can execute various animations sequentially or parallely.
 
 ## Features
 - Animation with duration and delay
@@ -20,6 +20,7 @@ AbemaAnimator can execute various animations sequentially or parallely
 ### Sample Animation
 
 #### Sequence Animation
+If you set `.sequence`, sequence animation is shown.
 ```swift
 let animator = Animator(view: sampleView)
 animator
@@ -31,6 +32,7 @@ animator
 
 
 #### Parallel Animation
+If you set `.parallel`, parallel animation is shown.
 ```swift
 let animator = Animator(view: sampleView)
 animator
@@ -43,6 +45,7 @@ animator
 
 
 #### Forever Animation
+If you set `forever` before calling `run`, forever animation is shown.
 ```swift
 let animator = Animator(view: sampleView)
 animator
@@ -79,6 +82,7 @@ animator.addBasicAnimation() // 🙅 you can't add animation
 animator.removeAll()
         .addBasicAnimation() // 🙆 You can add animation.
 ```
+
 
 ## Functions
 ### Add Animation
