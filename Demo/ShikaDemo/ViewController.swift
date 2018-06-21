@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AbemaAnimator
+import Shika
 
 class ViewController: UIViewController {
 

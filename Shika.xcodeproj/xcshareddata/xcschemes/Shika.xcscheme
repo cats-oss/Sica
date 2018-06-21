@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4A60FE220ABC9890079871A"
-               BuildableName = "AbemaAnimator.framework"
-               BlueprintName = "AbemaAnimator"
-               ReferencedContainer = "container:AbemaAnimator.xcodeproj">
+               BuildableName = "Shika.framework"
+               BlueprintName = "Shika"
+               ReferencedContainer = "container:Shika.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D4A60FEB20ABC9890079871A"
-               BuildableName = "AbemaAnimatorTests.xctest"
-               BlueprintName = "AbemaAnimatorTests"
-               ReferencedContainer = "container:AbemaAnimator.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D4A60FE220ABC9890079871A"
-            BuildableName = "AbemaAnimator.framework"
-            BlueprintName = "AbemaAnimator"
-            ReferencedContainer = "container:AbemaAnimator.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -65,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4A60FE220ABC9890079871A"
-            BuildableName = "AbemaAnimator.framework"
-            BlueprintName = "AbemaAnimator"
-            ReferencedContainer = "container:AbemaAnimator.xcodeproj">
+            BuildableName = "Shika.framework"
+            BlueprintName = "Shika"
+            ReferencedContainer = "container:Shika.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4A60FE220ABC9890079871A"
-            BuildableName = "AbemaAnimator.framework"
-            BlueprintName = "AbemaAnimator"
-            ReferencedContainer = "container:AbemaAnimator.xcodeproj">
+            BuildableName = "Shika.framework"
+            BlueprintName = "Shika"
+            ReferencedContainer = "container:Shika.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

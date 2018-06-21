@@ -3,16 +3,16 @@
 
 import PackageDescription
 let package = Package(
-    name: "AbemaAnimator",
+    name: "Shika",
     products: [
         .library(
-            name: "AbemaAnimator",
-            targets: ["AbemaAnimator"]),
+            name: "Shika",
+            targets: ["Shika"])
         ],
     targets: [
         .target(
-            name: "AbemaAnimator",
+            name: "Shika",
             dependencies: [],
-            path: "AbemaAnimator/Source")
+            path: "Shika/Source")
     ]
 )

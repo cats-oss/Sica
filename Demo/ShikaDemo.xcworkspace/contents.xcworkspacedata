@@ -5,9 +5,9 @@
       location = "group:../EasingFunctions.playground">
    </FileRef>
    <FileRef
-      location = "group:../AbemaAnimator.xcodeproj">
+      location = "group:../Shika.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Demo.xcodeproj">
+      location = "group:ShikaDemo.xcodeproj">
    </FileRef>
 </Workspace>

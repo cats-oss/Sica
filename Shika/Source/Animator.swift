@@ -1,5 +1,5 @@
 //
-//  AbemaAnimator.swift
+//  Animator.swift
 //  Demo
 //
 //  Created by 中澤 郁斗 on 2018/05/16.
