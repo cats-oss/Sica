@@ -63,6 +63,23 @@ Add animation and run
 animator.cancel() // Animation cancel
 ```
 
+#### Remove Added Animations
+If you call `run` and then you call add animation method, no animation will be added.
+If you use animator again, you call `removeAll` before `addBasicAnimation` or `addSpringAnimation` or `addTransitionAnimation`.
+```swift
+let animator = Animator(view: sampleView)
+/*
+Add animation and run
+*/
+
+// Bad
+animator.addBasicAnimation() // 🙅 you can't add animation
+
+// Good
+animator.removeAll()
+        .addBasicAnimation() // 🙆 You can add animation.
+```
+
 ## Functions
 ### Add Animation
 ```swift
