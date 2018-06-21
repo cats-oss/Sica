@@ -53,6 +53,28 @@ animator
 ```
 ![Forever](resources/forever.gif)
 
+
+## Functions
+### Add Animation
+```swift
+    public func addBasicAnimation<T>(keyPath: AbemaAnimator.AnimationKeyPath<T>, from: T, to: T, duration: Double, delay: Double = default, timingFunction: AbemaAnimator.TimingFunction = default) -> Self where T : AnimationValueType
+    public func addSpringAnimation<T>(keyPath: AbemaAnimator.AnimationKeyPath<T>, from: T, to: T, damping: CGFloat, mass: CGFloat, stiffness: CGFloat, initialVelocity: CGFloat, duration: Double, delay: Double = default, timingFunction: AbemaAnimator.TimingFunction = default) -> Self where T : AnimationValueType
+    public func addTransitionAnimation(startProgress: Float, endProgress: Float, type: AbemaAnimator.Transition, subtype: AbemaAnimator.TransitionSub, duration: Double, delay: Double = default, timingFunction: AbemaAnimator.TimingFunction = default) -> Self
+```
+
+### Add Animation Option
+```swift
+    public func delay(_ delay: Double) -> Self
+    public func forever(autoreverses: Bool = default) -> Self
+```
+
+### Animation Operation
+```swift
+    public func run(type: AbemaAnimator.Animator.AnimationPlayType, isRemovedOnCompletion: Bool = default, completion: (() -> Swift.Void)? = default)
+    public func cancel()
+    public func removeAll() -> Self
+```
+
 ## Support
 
 ### Animation
