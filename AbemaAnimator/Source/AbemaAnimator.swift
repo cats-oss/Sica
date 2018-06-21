@@ -6,6 +6,7 @@
 //  Copyright © 2018年 中澤 郁斗. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
 public final class Animator {
@@ -19,7 +20,7 @@ public final class Animator {
     }
 
     private let layer: CALayer
-    private let group = CAAnimationGroup()
+    private var group = CAAnimationGroup()
     private var animations = [CAAnimation]()
     public private(set) var isCompleted: Bool = false
 
@@ -57,6 +58,14 @@ public final class Animator {
         if isCompleted { return self }
         group.repeatCount = Float.greatestFiniteMagnitude
         group.autoreverses = autoreverses
+        return self
+    }
+
+    public func removeAll() -> Self {
+        layer.removeAllAnimations()
+        group = CAAnimationGroup()
+        animations = []
+        isCompleted = false
         return self
     }
 
@@ -126,6 +135,7 @@ public final class Animator {
         return self
     }
 }
+#endif
 
 #if DEBUG
 extension Animator {
