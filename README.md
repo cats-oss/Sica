@@ -1,4 +1,4 @@
-# AbemaAnimator
+# Shika
 <p align="center">
     <img src="./resources/logo.png" alt="shika" />
 </p>
@@ -7,10 +7,10 @@
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
-[![Version](https://img.shields.io/cocoapods/v/AbemaAnimator.svg?style=flat)](https://cocoapods.org/pods/AbemaAnimator)
-[![License](https://img.shields.io/cocoapods/l/AbemaAnimator.svg?style=flat)](https://cocoapods.org/pods/AbemaAnimator)
+[![Version](https://img.shields.io/cocoapods/v/Shika.svg?style=flat)](https://cocoapods.org/pods/Shika)
+[![License](https://img.shields.io/cocoapods/l/Shika.svg?style=flat)](https://cocoapods.org/pods/Shika)
 
-AbemaAnimator can execute various animations sequentially or parallely.
+Shika can execute various animations sequentially or parallely.
 
 ## Features
 - Animation with duration and delay
@@ -29,26 +29,26 @@ AbemaAnimator can execute various animations sequentially or parallely.
 ### Carthage
 
 If you’re using [Carthage](https://github.com/Carthage/Carthage), simply add
-AbemaAnimator to your `Cartfile`:
+Shika to your `Cartfile`:
 
 ```ruby
-github "abema/AbemaAnimator"
+github "abema/Shika"
 ```
 
 ### CocoaPods
 
-AbemaAnimator is available through [CocoaPods](https://cocoapods.org). To instal
+Shika is available through [CocoaPods](https://cocoapods.org). To instal
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'AbemaAnimator'
+pod 'Shika'
 ```
 
 ### Swift Package Manager
-AbemaAnimator is available through `SwiftPM`, create ` Package.swift` and add `dependencies` value
+Shika is available through `SwiftPM`, create ` Package.swift` and add `dependencies` value
 ```Package.swift
 dependencies: [
-    .package(url: "git@github.com:abema/AbemaAnimator.git", from: "0.1.0")
+    .package(url: "git@github.com:abema/Shika.git", from: "0.1.0")
 ]
 ```
 See also: [GitHub - j-channings/swift-package-manager-ios: Example of how to use SPM v4 to manage iOS dependencies](https://github.com/j-channings/swift-package-manager-ios)
@@ -125,9 +125,9 @@ animator.removeAll()
 ## Functions
 ### Add Animation
 ```swift
-    public func addBasicAnimation<T>(keyPath: AbemaAnimator.AnimationKeyPath<T>, from: T, to: T, duration: Double, delay: Double = default, timingFunction: AbemaAnimator.TimingFunction = default) -> Self where T : AnimationValueType
-    public func addSpringAnimation<T>(keyPath: AbemaAnimator.AnimationKeyPath<T>, from: T, to: T, damping: CGFloat, mass: CGFloat, stiffness: CGFloat, initialVelocity: CGFloat, duration: Double, delay: Double = default, timingFunction: AbemaAnimator.TimingFunction = default) -> Self where T : AnimationValueType
-    public func addTransitionAnimation(startProgress: Float, endProgress: Float, type: AbemaAnimator.Transition, subtype: AbemaAnimator.TransitionSub, duration: Double, delay: Double = default, timingFunction: AbemaAnimator.TimingFunction = default) -> Self
+    public func addBasicAnimation<T>(keyPath: Shika.AnimationKeyPath<T>, from: T, to: T, duration: Double, delay: Double = default, timingFunction: Shika.TimingFunction = default) -> Self where T : AnimationValueType
+    public func addSpringAnimation<T>(keyPath: Shika.AnimationKeyPath<T>, from: T, to: T, damping: CGFloat, mass: CGFloat, stiffness: CGFloat, initialVelocity: CGFloat, duration: Double, delay: Double = default, timingFunction: Shika.TimingFunction = default) -> Self where T : AnimationValueType
+    public func addTransitionAnimation(startProgress: Float, endProgress: Float, type: Shika.Transition, subtype: Shika.TransitionSub, duration: Double, delay: Double = default, timingFunction: Shika.TimingFunction = default) -> Self
 ```
 
 ### Add Animation Option
@@ -138,7 +138,7 @@ animator.removeAll()
 
 ### Animation Operation
 ```swift
-    public func run(type: AbemaAnimator.Animator.AnimationPlayType, isRemovedOnCompletion: Bool = default, completion: (() -> Swift.Void)? = default)
+    public func run(type: Shika.Animator.AnimationPlayType, isRemovedOnCompletion: Bool = default, completion: (() -> Swift.Void)? = default)
     public func cancel()
     public func removeAll() -> Self
 ```
@@ -161,7 +161,7 @@ you can choose various timing functions
 ![EasingFunctions](resources/EasingFunctions.gif)
 
 ### KeyPaths Table
-|AbemaAnimator|KeyPath|
+|Shika|KeyPath|
 |:-:|:-:|
 |`.anchorPoint`|`anchorPoint`|
 |`.backgroundColor`|`backgroundColor`|
@@ -190,13 +190,13 @@ you can choose various timing functions
 |`.zPosition`|`zPosition`|
 
 #### Anchor Point
-|AbemaAnimator|KeyPath|
+|Shika|KeyPath|
 |:-:|:-:|
 |`.anchorPointX`|`anchorPoint.x`|
 |`.anchorPointy`|`anchorPoint.y`|
 
 #### Bounds
-|AbemaAnimator|KeyPath|
+|Shika|KeyPath|
 |:-:|:-:|
 |`.boundsOrigin`|`bounds.origin`|
 |`.boundsOriginX`|`bounds.origin.x`|
@@ -206,7 +206,7 @@ you can choose various timing functions
 |`.boundsSizeHeight`|`bounds.size.height`|
 
 #### Contents
-|AbemaAnimator|KeyPath|
+|Shika|KeyPath|
 |:-:|:-:|
 |`.contentsRectOrigin`|`contentsRect.origin`|
 |`.contentsRectOriginX`|`contentsRect.origin.x`|
@@ -216,7 +216,7 @@ you can choose various timing functions
 |`.contentsRectSizeHeight`|`contentsRect.size.height`|
 
 #### Frame
-|AbemaAnimator|KeyPath|
+|Shika|KeyPath|
 |:-:|:-:|
 |`.frameOrigin`|`frame.origin`|
 |`.frameOriginX`|`frame.origin.x`|
@@ -226,20 +226,20 @@ you can choose various timing functions
 |`.frameSizeHeight`|`frame.size.height`|
 
 #### Position
-|AbemaAnimator|KeyPath|
+|Shika|KeyPath|
 |:-:|:-:|
 |`.positionX`|`position.x`|
 |`.positionY`|`position.y`|
 
 
 #### Shadow Offset
-|AbemaAnimator|KeyPath|
+|Shika|KeyPath|
 |:-:|:-:|
 |`.shadowOffsetWidth`|`shadowOffset.width`|
 |`.shadowOffsetHeight`|`shadowOffset.height`|
 
 #### Sublayer Transform
-|AbemaAnimator|KeyPath|
+|Shika|KeyPath|
 |:-:|:-:|
 |`.sublayerTransformRotationX`|`sublayerTransform.rotation.x`|
 |`.sublayerTransformRotationY`|`sublayerTransform.rotation.y`|
@@ -252,7 +252,7 @@ you can choose various timing functions
 |`.sublayerTransformTranslationZ`|`sublayerTransform.translation.z`|
 
 #### Transform
-|AbemaAnimator|KeyPath|
+|Shika|KeyPath|
 |:-:|:-:|
 |`.transformRotationX`|`transform.rotation.x`|
 |`.transformRotationY`|`transform.rotation.y`|
@@ -266,4 +266,4 @@ you can choose various timing functions
 
 
 ## License
-AbemaAnimator is available under the MIT license. See the LICENSE file for more info.
+Shika is available under the MIT license. See the LICENSE file for more info.
