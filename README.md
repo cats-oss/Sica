@@ -32,7 +32,7 @@ If you’re using [Carthage](https://github.com/Carthage/Carthage), simply add
 Shika to your `Cartfile`:
 
 ```ruby
-github "abema/Shika"
+github "cats-oss/Shika"
 ```
 
 ### CocoaPods
@@ -48,7 +48,7 @@ pod 'Shika'
 Shika is available through `SwiftPM`, create ` Package.swift` and add `dependencies` value
 ```Package.swift
 dependencies: [
-    .package(url: "git@github.com:abema/Shika.git", from: "0.1.0")
+    .package(url: "https://github.com/cats-oss/Shika.git", from: "0.1.0")
 ]
 ```
 See also: [GitHub - j-channings/swift-package-manager-ios: Example of how to use SPM v4 to manage iOS dependencies](https://github.com/j-channings/swift-package-manager-ios)
@@ -266,4 +266,4 @@ you can choose various timing functions
 
 
 ## License
-Shika is available under the MIT license. See the LICENSE file for more info.
+Shika is available under the MIT license. See the [LICENSE file](https://github.com/cats-oss/Shika/blob/master/LICENSE) for more info.
