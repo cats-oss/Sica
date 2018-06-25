@@ -1,15 +1,15 @@
 //
-//  ShikaTests.swift
-//  ShikaTests
+//  SicaTests.swift
+//  SicaTests
 //
 //  Created by 中澤 郁斗 on 2018/05/16.
 //  Copyright © 2018年 中澤 郁斗. All rights reserved.
 //
 
 import XCTest
-@testable import Shika
+@testable import Sica
 
-class ShikaTests: XCTestCase {
+class SicaTests: XCTestCase {
     var animator = Animator(view: UIView())
     
     override func setUp() {

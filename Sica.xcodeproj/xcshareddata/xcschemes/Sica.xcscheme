@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4A60FE220ABC9890079871A"
-               BuildableName = "Shika.framework"
-               BlueprintName = "Shika"
-               ReferencedContainer = "container:Shika.xcodeproj">
+               BuildableName = "Sica.framework"
+               BlueprintName = "Sica"
+               ReferencedContainer = "container:Sica.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4A60FEB20ABC9890079871A"
-               BuildableName = "ShikaTests.xctest"
-               BlueprintName = "ShikaTests"
-               ReferencedContainer = "container:Shika.xcodeproj">
+               BuildableName = "SicaTests.xctest"
+               BlueprintName = "SicaTests"
+               ReferencedContainer = "container:Sica.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4A60FE220ABC9890079871A"
-            BuildableName = "Shika.framework"
-            BlueprintName = "Shika"
-            ReferencedContainer = "container:Shika.xcodeproj">
+            BuildableName = "Sica.framework"
+            BlueprintName = "Sica"
+            ReferencedContainer = "container:Sica.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4A60FE220ABC9890079871A"
-            BuildableName = "Shika.framework"
-            BlueprintName = "Shika"
-            ReferencedContainer = "container:Shika.xcodeproj">
+            BuildableName = "Sica.framework"
+            BlueprintName = "Sica"
+            ReferencedContainer = "container:Sica.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4A60FE220ABC9890079871A"
-            BuildableName = "Shika.framework"
-            BlueprintName = "Shika"
-            ReferencedContainer = "container:Shika.xcodeproj">
+            BuildableName = "Sica.framework"
+            BlueprintName = "Sica"
+            ReferencedContainer = "container:Sica.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

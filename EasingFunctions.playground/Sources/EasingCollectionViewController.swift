@@ -1,6 +1,6 @@
 import Foundation
 import UIKit
-import Shika
+import Sica
 
 public class EasingCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 

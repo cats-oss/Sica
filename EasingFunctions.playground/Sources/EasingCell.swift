@@ -1,5 +1,5 @@
 import UIKit
-import Shika
+import Sica
 
 class EasingCell: UICollectionViewCell {
     
