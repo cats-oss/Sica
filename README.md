@@ -1,16 +1,16 @@
-# Shika
+# Simple Interface Core Animation.
 <p align="center">
-    <img src="./resources/logo.png" alt="shika" />
+    <img src="./resources/logo.png" alt="Sica" width="70%" height="70%" />
 </p>
 
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat)](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
-[![Version](https://img.shields.io/cocoapods/v/Shika.svg?style=flat)](https://cocoapods.org/pods/Shika)
-[![License](https://img.shields.io/cocoapods/l/Shika.svg?style=flat)](https://cocoapods.org/pods/Shika)
+[![Version](https://img.shields.io/cocoapods/v/Sica.svg?style=flat)](https://cocoapods.org/pods/Sica)
+[![License](https://img.shields.io/cocoapods/l/Sica.svg?style=flat)](https://cocoapods.org/pods/Sica)
 
-Shika can execute various animations sequentially or parallely.
+Sica can execute various animations sequentially or parallely.
 
 ## Features
 - Animation with duration and delay
@@ -29,26 +29,26 @@ Shika can execute various animations sequentially or parallely.
 ### Carthage
 
 If you’re using [Carthage](https://github.com/Carthage/Carthage), simply add
-Shika to your `Cartfile`:
+Sica to your `Cartfile`:
 
 ```ruby
-github "cats-oss/Shika"
+github "cats-oss/Sica"
 ```
 
 ### CocoaPods
 
-Shika is available through [CocoaPods](https://cocoapods.org). To instal
+Sica is available through [CocoaPods](https://cocoapods.org). To instal
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Shika'
+pod 'Sica'
 ```
 
 ### Swift Package Manager
-Shika is available through `SwiftPM`, create ` Package.swift` and add `dependencies` value
+Sica is available through `SwiftPM`, create ` Package.swift` and add `dependencies` value
 ```Package.swift
 dependencies: [
-    .package(url: "https://github.com/cats-oss/Shika.git", from: "0.1.0")
+    .package(url: "https://github.com/cats-oss/Sica.git", from: "0.1.0")
 ]
 ```
 See also: [GitHub - j-channings/swift-package-manager-ios: Example of how to use SPM v4 to manage iOS dependencies](https://github.com/j-channings/swift-package-manager-ios)
@@ -125,9 +125,9 @@ animator.removeAll()
 ## Functions
 ### Add Animation
 ```swift
-    public func addBasicAnimation<T>(keyPath: Shika.AnimationKeyPath<T>, from: T, to: T, duration: Double, delay: Double = default, timingFunction: Shika.TimingFunction = default) -> Self where T : AnimationValueType
-    public func addSpringAnimation<T>(keyPath: Shika.AnimationKeyPath<T>, from: T, to: T, damping: CGFloat, mass: CGFloat, stiffness: CGFloat, initialVelocity: CGFloat, duration: Double, delay: Double = default, timingFunction: Shika.TimingFunction = default) -> Self where T : AnimationValueType
-    public func addTransitionAnimation(startProgress: Float, endProgress: Float, type: Shika.Transition, subtype: Shika.TransitionSub, duration: Double, delay: Double = default, timingFunction: Shika.TimingFunction = default) -> Self
+    public func addBasicAnimation<T>(keyPath: Sica.AnimationKeyPath<T>, from: T, to: T, duration: Double, delay: Double = default, timingFunction: Sica.TimingFunction = default) -> Self where T : AnimationValueType
+    public func addSpringAnimation<T>(keyPath: Sica.AnimationKeyPath<T>, from: T, to: T, damping: CGFloat, mass: CGFloat, stiffness: CGFloat, initialVelocity: CGFloat, duration: Double, delay: Double = default, timingFunction: Sica.TimingFunction = default) -> Self where T : AnimationValueType
+    public func addTransitionAnimation(startProgress: Float, endProgress: Float, type: Sica.Transition, subtype: Sica.TransitionSub, duration: Double, delay: Double = default, timingFunction: Sica.TimingFunction = default) -> Self
 ```
 
 ### Add Animation Option
@@ -138,7 +138,7 @@ animator.removeAll()
 
 ### Animation Operation
 ```swift
-    public func run(type: Shika.Animator.AnimationPlayType, isRemovedOnCompletion: Bool = default, completion: (() -> Swift.Void)? = default)
+    public func run(type: Sica.Animator.AnimationPlayType, isRemovedOnCompletion: Bool = default, completion: (() -> Swift.Void)? = default)
     public func cancel()
     public func removeAll() -> Self
 ```
@@ -161,7 +161,7 @@ you can choose various timing functions
 ![EasingFunctions](resources/EasingFunctions.gif)
 
 ### KeyPaths Table
-|Shika|KeyPath|
+|Sica|KeyPath|
 |:-:|:-:|
 |`.anchorPoint`|`anchorPoint`|
 |`.backgroundColor`|`backgroundColor`|
@@ -190,13 +190,13 @@ you can choose various timing functions
 |`.zPosition`|`zPosition`|
 
 #### Anchor Point
-|Shika|KeyPath|
+|Sica|KeyPath|
 |:-:|:-:|
 |`.anchorPointX`|`anchorPoint.x`|
 |`.anchorPointy`|`anchorPoint.y`|
 
 #### Bounds
-|Shika|KeyPath|
+|Sica|KeyPath|
 |:-:|:-:|
 |`.boundsOrigin`|`bounds.origin`|
 |`.boundsOriginX`|`bounds.origin.x`|
@@ -206,7 +206,7 @@ you can choose various timing functions
 |`.boundsSizeHeight`|`bounds.size.height`|
 
 #### Contents
-|Shika|KeyPath|
+|Sica|KeyPath|
 |:-:|:-:|
 |`.contentsRectOrigin`|`contentsRect.origin`|
 |`.contentsRectOriginX`|`contentsRect.origin.x`|
@@ -216,7 +216,7 @@ you can choose various timing functions
 |`.contentsRectSizeHeight`|`contentsRect.size.height`|
 
 #### Frame
-|Shika|KeyPath|
+|Sica|KeyPath|
 |:-:|:-:|
 |`.frameOrigin`|`frame.origin`|
 |`.frameOriginX`|`frame.origin.x`|
@@ -226,20 +226,20 @@ you can choose various timing functions
 |`.frameSizeHeight`|`frame.size.height`|
 
 #### Position
-|Shika|KeyPath|
+|Sica|KeyPath|
 |:-:|:-:|
 |`.positionX`|`position.x`|
 |`.positionY`|`position.y`|
 
 
 #### Shadow Offset
-|Shika|KeyPath|
+|Sica|KeyPath|
 |:-:|:-:|
 |`.shadowOffsetWidth`|`shadowOffset.width`|
 |`.shadowOffsetHeight`|`shadowOffset.height`|
 
 #### Sublayer Transform
-|Shika|KeyPath|
+|Sica|KeyPath|
 |:-:|:-:|
 |`.sublayerTransformRotationX`|`sublayerTransform.rotation.x`|
 |`.sublayerTransformRotationY`|`sublayerTransform.rotation.y`|
@@ -252,7 +252,7 @@ you can choose various timing functions
 |`.sublayerTransformTranslationZ`|`sublayerTransform.translation.z`|
 
 #### Transform
-|Shika|KeyPath|
+|Sica|KeyPath|
 |:-:|:-:|
 |`.transformRotationX`|`transform.rotation.x`|
 |`.transformRotationY`|`transform.rotation.y`|
@@ -266,4 +266,4 @@ you can choose various timing functions
 
 
 ## License
-Shika is available under the MIT license. See the [LICENSE file](https://github.com/cats-oss/Shika/blob/master/LICENSE) for more info.
+Sica is available under the MIT license. See the [LICENSE file](https://github.com/cats-oss/Sica/blob/master/LICENSE) for more info.

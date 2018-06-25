@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Shika
+import Sica
 
 class ViewController: UIViewController {
 
