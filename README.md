@@ -1,6 +1,6 @@
 # Simple Interface Core Animation.
 <p align="center">
-    <img src="./resources/logo.png" alt="Sica" />
+    <img src="./resources/logo.png" alt="Sica" width="70%" height="70%" />
 </p>
 
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat)](https://developer.apple.com/iphone/index.action)
