@@ -1,4 +1,4 @@
-# Sica
+# Simple Interface Core Animation.
 <p align="center">
     <img src="./resources/logo.png" alt="Sica" />
 </p>
