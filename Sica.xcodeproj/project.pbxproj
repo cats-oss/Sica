@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		D4A60FE320ABC9890079871A /* Sica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A60FE620ABC9890079871A /* Sica.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sica.h; sourceTree = "<group>"; };
-		D4A60FE720ABC9890079871A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4A60FE720ABC9890079871A /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		D4A60FEC20ABC9890079871A /* SicaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SicaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A60FF120ABC9890079871A /* SicaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicaTests.swift; sourceTree = "<group>"; };
 		D4A60FF320ABC9890079871A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D436C2F20E9E45500A1B938 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D4A60FE720ABC9890079871A /* Info-iOS.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		D4A60FD920ABC9890079871A = {
 			isa = PBXGroup;
 			children = (
@@ -81,8 +89,8 @@
 		D4A60FE520ABC9890079871A /* Sica */ = {
 			isa = PBXGroup;
 			children = (
+				9D436C2F20E9E45500A1B938 /* Resource */,
 				D4A60FE620ABC9890079871A /* Sica.h */,
-				D4A60FE720ABC9890079871A /* Info.plist */,
 				D4CB78C020AC2BDD003232F6 /* Source */,
 			);
 			path = Sica;
@@ -123,9 +131,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D4A60FE220ABC9890079871A /* Sica */ = {
+		D4A60FE220ABC9890079871A /* Sica-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4A60FF720ABC9890079871A /* Build configuration list for PBXNativeTarget "Sica" */;
+			buildConfigurationList = D4A60FF720ABC9890079871A /* Build configuration list for PBXNativeTarget "Sica-iOS" */;
 			buildPhases = (
 				D4A60FDE20ABC9890079871A /* Sources */,
 				D4A60FDF20ABC9890079871A /* Frameworks */,
@@ -137,7 +145,7 @@
 			);
 			dependencies = (
 			);
-			name = Sica;
+			name = "Sica-iOS";
 			productName = AbemaAnimator;
 			productReference = D4A60FE320ABC9890079871A /* Sica.framework */;
 			productType = "com.apple.product-type.framework";
@@ -191,7 +199,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4A60FE220ABC9890079871A /* Sica */,
+				D4A60FE220ABC9890079871A /* Sica-iOS */,
 				D4A60FEB20ABC9890079871A /* SicaTests */,
 			);
 		};
@@ -256,7 +264,7 @@
 /* Begin PBXTargetDependency section */
 		D4A60FEF20ABC9890079871A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D4A60FE220ABC9890079871A /* Sica */;
+			target = D4A60FE220ABC9890079871A /* Sica-iOS */;
 			targetProxy = D4A60FEE20ABC9890079871A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -392,7 +400,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sica/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sica/Resource/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -401,7 +409,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.sica;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Sica;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -418,7 +426,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sica/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sica/Resource/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -427,7 +435,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.sica;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Sica;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -488,7 +496,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4A60FF720ABC9890079871A /* Build configuration list for PBXNativeTarget "Sica" */ = {
+		D4A60FF720ABC9890079871A /* Build configuration list for PBXNativeTarget "Sica-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4A60FF820ABC9890079871A /* Debug */,

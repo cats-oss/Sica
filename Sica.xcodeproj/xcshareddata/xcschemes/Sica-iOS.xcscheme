@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4A60FE220ABC9890079871A"
-               BuildableName = "Sica.framework"
-               BlueprintName = "Sica"
+               BuildableName = "Sica_iOS.framework"
+               BlueprintName = "Sica-iOS"
                ReferencedContainer = "container:Sica.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4A60FE220ABC9890079871A"
-            BuildableName = "Sica.framework"
-            BlueprintName = "Sica"
+            BuildableName = "Sica_iOS.framework"
+            BlueprintName = "Sica-iOS"
             ReferencedContainer = "container:Sica.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,8 +65,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4A60FE220ABC9890079871A"
-            BuildableName = "Sica.framework"
-            BlueprintName = "Sica"
+            BuildableName = "Sica_iOS.framework"
+            BlueprintName = "Sica-iOS"
             ReferencedContainer = "container:Sica.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -83,8 +83,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4A60FE220ABC9890079871A"
-            BuildableName = "Sica.framework"
-            BlueprintName = "Sica"
+            BuildableName = "Sica_iOS.framework"
+            BlueprintName = "Sica-iOS"
             ReferencedContainer = "container:Sica.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
