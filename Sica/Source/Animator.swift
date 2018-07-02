@@ -8,6 +8,11 @@
 
 #if os(iOS)
 import UIKit
+public typealias View = UIView
+#elseif os(macOS)
+import AppKit
+public typealias View = NSView
+#endif
 
 public final class Animator {
 
@@ -26,8 +31,18 @@ public final class Animator {
 
     public let key: String
 
-    public init(view: UIView, forKey key: String? = nil) {
+    public init(view: View, forKey key: String? = nil) {
+        #if os(iOS)
         self.layer = view.layer
+        #elseif os(macOS)
+        view.wantsLayer = true
+        if let layer = view.layer {
+            self.layer = layer
+        } else {
+            fatalError("view.layer is nil in \(#file)_\(#function)_\(#line)")
+        }
+        #endif
+
         self.key = key ?? UUID().uuidString
     }
 
@@ -107,6 +122,7 @@ public final class Animator {
         return self
     }
 
+    @available(iOS 9, macOS 10.11, *)
     public func addSpringAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, from: T, to: T, damping: CGFloat, mass: CGFloat, stiffness: CGFloat, initialVelocity: CGFloat, duration: Double, delay: Double = 0, timingFunction: TimingFunction = .default) -> Self {
         if isCompleted { return self }
         let springAnimation = CASpringAnimation(keyPath: keyPath.rawValue)
@@ -135,7 +151,6 @@ public final class Animator {
         return self
     }
 }
-#endif
 
 #if DEBUG
 extension Animator {
