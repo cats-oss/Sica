@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9D436C6220E9EA1E00A1B938"
+               BuildableName = "SicaTests.xctest"
+               BlueprintName = "SicaTests-macOS"
+               ReferencedContainer = "container:Sica.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9D436C3020E9E4DD00A1B938"
+            BuildableName = "Sica.framework"
+            BlueprintName = "Sica-macOS"
+            ReferencedContainer = "container:Sica.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

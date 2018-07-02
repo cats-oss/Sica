@@ -34,7 +34,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4A60FEB20ABC9890079871A"
                BuildableName = "SicaTests.xctest"
-               BlueprintName = "SicaTests"
+               BlueprintName = "SicaTests-iOS"
                ReferencedContainer = "container:Sica.xcodeproj">
             </BuildableReference>
          </TestableReference>

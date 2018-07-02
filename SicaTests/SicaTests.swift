@@ -10,11 +10,11 @@ import XCTest
 @testable import Sica
 
 class SicaTests: XCTestCase {
-    var animator = Animator(view: UIView())
+    var animator = Animator(view: View())
     
     override func setUp() {
         super.setUp()
-        animator = Animator(view: UIView())
+        animator = Animator(view: View())
     }
     
     override func tearDown() {

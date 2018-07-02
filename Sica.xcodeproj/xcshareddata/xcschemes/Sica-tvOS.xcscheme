@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9D436C4220E9E71900A1B938"
-               BuildableName = "Sica-tvOS.framework"
+               BuildableName = "Sica.framework"
                BlueprintName = "Sica-tvOS"
                ReferencedContainer = "container:Sica.xcodeproj">
             </BuildableReference>
@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9D436C5420E9E8F200A1B938"
+               BuildableName = "SicaTests.xctest"
+               BlueprintName = "SicaTests-tvOS"
+               ReferencedContainer = "container:Sica.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9D436C4220E9E71900A1B938"
+            BuildableName = "Sica.framework"
+            BlueprintName = "Sica-tvOS"
+            ReferencedContainer = "container:Sica.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -46,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9D436C4220E9E71900A1B938"
-            BuildableName = "Sica-tvOS.framework"
+            BuildableName = "Sica.framework"
             BlueprintName = "Sica-tvOS"
             ReferencedContainer = "container:Sica.xcodeproj">
          </BuildableReference>
@@ -64,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9D436C4220E9E71900A1B938"
-            BuildableName = "Sica-tvOS.framework"
+            BuildableName = "Sica.framework"
             BlueprintName = "Sica-tvOS"
             ReferencedContainer = "container:Sica.xcodeproj">
          </BuildableReference>
