@@ -3,12 +3,25 @@
     <img src="./resources/logo.png" alt="Sica" width="70%" height="70%" />
 </p>
 
-[![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat)](https://developer.apple.com/iphone/index.action)
-[![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
-[![Version](https://img.shields.io/cocoapods/v/Sica.svg?style=flat)](https://cocoapods.org/pods/Sica)
-[![License](https://img.shields.io/cocoapods/l/Sica.svg?style=flat)](https://cocoapods.org/pods/Sica)
+<p align="center">
+  <img src="http://img.shields.io/badge/platform-ios | tvOS | macOS-blue.svg?style=flat" alt="Platform" />
+  <a href="https://developer.apple.com/swift">
+    <img src="http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat" alt="Language" />
+  </a>
+  <a href="https://github.com/Carthage/Carthage">
+    <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage" />
+  </a>
+  <br />
+  <a href="https://github.com/apple/swift-package-manager">
+    <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Swift Package Manager" />
+  </a>
+  <a href="https://cocoapods.org/pods/Sica">
+    <img src="https://img.shields.io/cocoapods/v/Sica.svg?style=flat" alt="Version" />
+  </a>
+  <a href="https://cocoapods.org/pods/Sica">
+    <img src="https://img.shields.io/cocoapods/l/Sica.svg?style=flat" alt="License" />
+  </a>
+</p>
 
 Sica can execute various animations sequentially or parallely.
 
@@ -22,6 +35,8 @@ Sica can execute various animations sequentially or parallely.
 ## Requirements
 - Xcode 9.3
 - iOS 9 or greater
+- tvOS 10.0 or greater
+- macOS 10.11 or greater
 
 
 ## Installation
