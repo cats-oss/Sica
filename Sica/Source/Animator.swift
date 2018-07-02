@@ -6,7 +6,7 @@
 //  Copyright © 2018年 中澤 郁斗. All rights reserved.
 //
 
-#if os(iOS)
+#if os(iOS) || os(tvOS)
 import UIKit
 public typealias View = UIView
 #elseif os(macOS)
@@ -32,7 +32,7 @@ public final class Animator {
     public let key: String
 
     public init(view: View, forKey key: String? = nil) {
-        #if os(iOS)
+        #if os(iOS) || os(tvOS)
         self.layer = view.layer
         #elseif os(macOS)
         view.wantsLayer = true
@@ -122,7 +122,7 @@ public final class Animator {
         return self
     }
 
-    @available(iOS 9, macOS 10.11, *)
+    @available(iOS 9, tvOS 10.0, macOS 10.11, *)
     public func addSpringAnimation<T: AnimationValueType>(keyPath: AnimationKeyPath<T>, from: T, to: T, damping: CGFloat, mass: CGFloat, stiffness: CGFloat, initialVelocity: CGFloat, duration: Double, delay: Double = 0, timingFunction: TimingFunction = .default) -> Self {
         if isCompleted { return self }
         let springAnimation = CASpringAnimation(keyPath: keyPath.rawValue)

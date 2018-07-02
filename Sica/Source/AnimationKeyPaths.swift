@@ -6,7 +6,7 @@
 //  Copyright © 2018年 中澤 郁斗. All rights reserved.
 //
 
-#if os(iOS)
+#if os(iOS) || os(tvOS)
 import UIKit
 #elseif os(macOS)
 import AppKit

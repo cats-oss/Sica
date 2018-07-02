@@ -13,6 +13,12 @@
 		9D436C3520E9E4DD00A1B938 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C420AC2BDD003232F6 /* Animator.swift */; };
 		9D436C3620E9E4DD00A1B938 /* AnimationKeyPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C520AC2BDD003232F6 /* AnimationKeyPaths.swift */; };
 		9D436C3920E9E4DD00A1B938 /* Sica.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A60FE620ABC9890079871A /* Sica.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D436C4420E9E71900A1B938 /* TimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C620AC2BDD003232F6 /* TimingFunction.swift */; };
+		9D436C4520E9E71900A1B938 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C220AC2BDD003232F6 /* Transition.swift */; };
+		9D436C4620E9E71900A1B938 /* CAAnimation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C120AC2BDD003232F6 /* CAAnimation+Extension.swift */; };
+		9D436C4720E9E71900A1B938 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C420AC2BDD003232F6 /* Animator.swift */; };
+		9D436C4820E9E71900A1B938 /* AnimationKeyPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C520AC2BDD003232F6 /* AnimationKeyPaths.swift */; };
+		9D436C4B20E9E71900A1B938 /* Sica.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A60FE620ABC9890079871A /* Sica.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4A60FED20ABC9890079871A /* Sica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A60FE320ABC9890079871A /* Sica.framework */; };
 		D4A60FF220ABC9890079871A /* SicaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A60FF120ABC9890079871A /* SicaTests.swift */; };
 		D4A60FF420ABC9890079871A /* Sica.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A60FE620ABC9890079871A /* Sica.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,6 +42,8 @@
 /* Begin PBXFileReference section */
 		9D436C3F20E9E4DD00A1B938 /* Sica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D436C4120E9E62700A1B938 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
+		9D436C5120E9E71900A1B938 /* Sica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D436C5320E9E73D00A1B938 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		D4A60FE320ABC9890079871A /* Sica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A60FE620ABC9890079871A /* Sica.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sica.h; sourceTree = "<group>"; };
 		D4A60FE720ABC9890079871A /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
@@ -51,6 +59,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		9D436C3720E9E4DD00A1B938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D436C4920E9E71900A1B938 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				D4A60FE720ABC9890079871A /* Info-iOS.plist */,
+				9D436C5320E9E73D00A1B938 /* Info-tvOS.plist */,
 				9D436C4120E9E62700A1B938 /* Info-macOS.plist */,
 			);
 			path = Resource;
@@ -99,6 +115,7 @@
 				D4A60FE320ABC9890079871A /* Sica.framework */,
 				D4A60FEC20ABC9890079871A /* SicaTests.xctest */,
 				9D436C3F20E9E4DD00A1B938 /* Sica.framework */,
+				9D436C5120E9E71900A1B938 /* Sica.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,6 +162,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D436C4A20E9E71900A1B938 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D436C4B20E9E71900A1B938 /* Sica.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D4A60FE020ABC9890079871A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +198,25 @@
 			name = "Sica-macOS";
 			productName = AbemaAnimator;
 			productReference = 9D436C3F20E9E4DD00A1B938 /* Sica.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9D436C4220E9E71900A1B938 /* Sica-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D436C4E20E9E71900A1B938 /* Build configuration list for PBXNativeTarget "Sica-tvOS" */;
+			buildPhases = (
+				9D436C4320E9E71900A1B938 /* Sources */,
+				9D436C4920E9E71900A1B938 /* Frameworks */,
+				9D436C4A20E9E71900A1B938 /* Headers */,
+				9D436C4C20E9E71900A1B938 /* Resources */,
+				9D436C4D20E9E71900A1B938 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sica-tvOS";
+			productName = AbemaAnimator;
+			productReference = 9D436C5120E9E71900A1B938 /* Sica.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D4A60FE220ABC9890079871A /* Sica-iOS */ = {
@@ -245,6 +289,7 @@
 			targets = (
 				D4A60FE220ABC9890079871A /* Sica-iOS */,
 				9D436C3020E9E4DD00A1B938 /* Sica-macOS */,
+				9D436C4220E9E71900A1B938 /* Sica-tvOS */,
 				D4A60FEB20ABC9890079871A /* SicaTests */,
 			);
 		};
@@ -252,6 +297,13 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		9D436C3A20E9E4DD00A1B938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D436C4C20E9E71900A1B938 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -276,6 +328,19 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 		9D436C3B20E9E4DD00A1B938 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+		9D436C4D20E9E71900A1B938 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -313,6 +378,18 @@
 				9D436C3420E9E4DD00A1B938 /* CAAnimation+Extension.swift in Sources */,
 				9D436C3520E9E4DD00A1B938 /* Animator.swift in Sources */,
 				9D436C3620E9E4DD00A1B938 /* AnimationKeyPaths.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D436C4320E9E71900A1B938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D436C4420E9E71900A1B938 /* TimingFunction.swift in Sources */,
+				9D436C4520E9E71900A1B938 /* Transition.swift in Sources */,
+				9D436C4620E9E71900A1B938 /* CAAnimation+Extension.swift in Sources */,
+				9D436C4720E9E71900A1B938 /* Animator.swift in Sources */,
+				9D436C4820E9E71900A1B938 /* AnimationKeyPaths.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +479,64 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9D436C4F20E9E71900A1B938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sica/Resource/Info-tvOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cats-oss.sica";
+				PRODUCT_NAME = Sica;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		9D436C5020E9E71900A1B938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sica/Resource/Info-tvOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cats-oss.sica";
+				PRODUCT_NAME = Sica;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
@@ -629,6 +764,15 @@
 			buildConfigurations = (
 				9D436C3D20E9E4DD00A1B938 /* Debug */,
 				9D436C3E20E9E4DD00A1B938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D436C4E20E9E71900A1B938 /* Build configuration list for PBXNativeTarget "Sica-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D436C4F20E9E71900A1B938 /* Debug */,
+				9D436C5020E9E71900A1B938 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
