@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <img src="http://img.shields.io/badge/platform-ios | tvOS | macOS-blue.svg?style=flat" alt="Platform" />
+  <img src="http://img.shields.io/badge/platform-iOS | tvOS | macOS-blue.svg?style=flat" alt="Platform" />
   <a href="https://developer.apple.com/swift">
     <img src="http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat" alt="Language" />
   </a>
