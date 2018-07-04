@@ -6,8 +6,11 @@
 //  Copyright © 2018年 中澤 郁斗. All rights reserved.
 //
 
-#if os(iOS)
+#if os(iOS) || os(tvOS)
 import UIKit
+#elseif os(macOS)
+import AppKit
+#endif
 
 open class AnimationKeyPaths {
     fileprivate init() {}
@@ -129,4 +132,3 @@ extension AnimationKeyPaths {
     public static let transformTranslationY  = AnimationKeyPath<CGFloat>(keyPath: "transform.translation.y")
     public static let transformTranslationZ  = AnimationKeyPath<CGFloat>(keyPath: "transform.translation.z")
 }
-#endif

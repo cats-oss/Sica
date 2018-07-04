@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D4A60FE220ABC9890079871A"
+               BlueprintIdentifier = "9D436C4220E9E71900A1B938"
                BuildableName = "Sica.framework"
-               BlueprintName = "Sica"
+               BlueprintName = "Sica-tvOS"
                ReferencedContainer = "container:Sica.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D4A60FEB20ABC9890079871A"
+               BlueprintIdentifier = "9D436C5420E9E8F200A1B938"
                BuildableName = "SicaTests.xctest"
-               BlueprintName = "SicaTests"
+               BlueprintName = "SicaTests-tvOS"
                ReferencedContainer = "container:Sica.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D4A60FE220ABC9890079871A"
+            BlueprintIdentifier = "9D436C4220E9E71900A1B938"
             BuildableName = "Sica.framework"
-            BlueprintName = "Sica"
+            BlueprintName = "Sica-tvOS"
             ReferencedContainer = "container:Sica.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D4A60FE220ABC9890079871A"
+            BlueprintIdentifier = "9D436C4220E9E71900A1B938"
             BuildableName = "Sica.framework"
-            BlueprintName = "Sica"
+            BlueprintName = "Sica-tvOS"
             ReferencedContainer = "container:Sica.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D4A60FE220ABC9890079871A"
+            BlueprintIdentifier = "9D436C4220E9E71900A1B938"
             BuildableName = "Sica.framework"
-            BlueprintName = "Sica"
+            BlueprintName = "Sica-tvOS"
             ReferencedContainer = "container:Sica.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
