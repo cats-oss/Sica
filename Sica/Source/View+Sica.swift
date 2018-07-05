@@ -1,5 +1,5 @@
 //
-//  UIView+Sica.swift
+//  View+Sica.swift
 //  Sica-iOS
 //
 //  Created by 中澤 郁斗 on 2018/07/05.
@@ -10,7 +10,7 @@ import Foundation
 
 private let _animatorAssociatedKey = UnsafeMutablePointer<UInt>.allocate(capacity: 1)
 
-extension UIView {
+extension View {
     public var sica: Animator {
         set {
             objc_setAssociatedObject(self, _animatorAssociatedKey, newValue, .OBJC_ASSOCIATION_ASSIGN)
