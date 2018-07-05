@@ -21,9 +21,7 @@ class ViewController: UIViewController {
         view.addSubview(sampleView)
 
         Animation: do {
-            let animator = Animator(view: sampleView, forKey: "sampleAnimation")
-
-            animator.delay(4)
+            sampleView.sica.delay(4)
                 .addBasicAnimation(keyPath: .positionY, from: 368, to: 380, duration: 0.5, timingFunction: .easeOutExpo)
                 .addBasicAnimation(keyPath: .positionY, from: 380, to: 378, duration: 1.5, timingFunction: .easeInOutCubic)
                 .addBasicAnimation(keyPath: .positionY, from: 378, to: 372, duration: 0.2, timingFunction: .easeOutCubic)
