@@ -46,6 +46,11 @@ public final class Animator {
         self.key = key ?? UUID().uuidString
     }
 
+    public init(layer: CALayer, forKey key: String? = nil) {
+        self.layer = layer
+        self.key = key ?? UUID().uuidString
+    }
+
     private func calculateBeginTime() {
         for (i, anim) in animations.enumerated() where i > 0 {
             let prev = animations[i - 1]
