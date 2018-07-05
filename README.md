@@ -13,7 +13,7 @@
   </a>
   <br />
   <a href="https://github.com/apple/swift-package-manager">
-    <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Swift Package Manager" />
+    <img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" />
   </a>
   <a href="https://cocoapods.org/pods/Sica">
     <img src="https://img.shields.io/cocoapods/v/Sica.svg?style=flat" alt="Version" />
