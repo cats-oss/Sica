@@ -158,6 +158,24 @@ animator.removeAll()
     public func removeAll() -> Self
 ```
 
+## Extensions
+
+You can access sica property in `UIView` and `CALayer`.
+
+```swift
+let view = UIView(frame: ...)
+view.sica
+    .addBasicAnimation(keyPath: .positionX, from: 50, to: 150, duration: 2, timingFunction: .easeOutExpo)
+    .run(type: .sequence)
+```
+
+```swift
+let layer = CALayer()
+layer.sica
+    .addBasicAnimation(keyPath: .positionX, from: 50, to: 150, duration: 2, timingFunction: .easeOutExpo)
+    .run(type: .sequence)
+```
+
 ## Support
 
 ### Animation

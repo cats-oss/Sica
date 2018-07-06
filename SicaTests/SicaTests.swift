@@ -140,4 +140,36 @@ class SicaTests: XCTestCase {
         XCTAssertEqual(animator.test.animations.count, 0)
         XCTAssertEqual(animator.isCompleted, false)
     }
+
+    func testSicaPropertyOfView() {
+        var view: View! = View(frame: .zero)
+
+        XCTAssertNotNil(view.sica)
+
+        let expect = expectation(description: "wait deinit call of sica instance")
+
+        view.sica.test.setDeinit {
+            expect.fulfill()
+        }
+
+        view = nil
+
+        wait(for: [expect], timeout: 0.1)
+    }
+
+    func testSicaPropertyOfLayer() {
+        var layer: CALayer! = CALayer()
+
+        XCTAssertNotNil(layer.sica)
+
+        let expect = expectation(description: "wait deinit call of sica instance")
+
+        layer.sica.test.setDeinit {
+            expect.fulfill()
+        }
+
+        layer = nil
+
+        wait(for: [expect], timeout: 0.1)
+    }
 }
