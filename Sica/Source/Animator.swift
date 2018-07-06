@@ -24,7 +24,7 @@ public final class Animator {
         case parallel
     }
 
-    private let layer: CALayer
+    private weak var layer: CALayer?
     private var group = CAAnimationGroup()
     private var animations = [CAAnimation]()
     public private(set) var isCompleted: Bool = false
@@ -89,7 +89,7 @@ public final class Animator {
     }
 
     public func removeAll() -> Self {
-        layer.removeAllAnimations()
+        layer?.removeAllAnimations()
         group = CAAnimationGroup()
         animations = []
         isCompleted = false
@@ -97,7 +97,7 @@ public final class Animator {
     }
 
     public func cancel() {
-        layer.removeAnimation(forKey: key)
+        layer?.removeAnimation(forKey: key)
     }
 
     public func run(type: AnimationPlayType, isRemovedOnCompletion: Bool = false, completion: (() -> Void)? = nil) {
@@ -115,10 +115,10 @@ public final class Animator {
             CATransaction.setCompletionBlock {
                 completion()
             }
-            layer.add(group, forKey: key)
+            layer?.add(group, forKey: key)
             CATransaction.commit()
         } else {
-            layer.add(group, forKey: key)
+            layer?.add(group, forKey: key)
         }
         isCompleted = true
     }
