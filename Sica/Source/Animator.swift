@@ -31,6 +31,13 @@ public final class Animator {
 
     public let key: String
 
+    #if DEBUG
+    private var _deinit: (() -> ())? = nil
+    deinit {
+        _deinit?()
+    }
+    #endif
+
     public init(view: View, forKey key: String? = nil) {
         #if os(iOS) || os(tvOS)
         self.layer = view.layer
@@ -167,6 +174,10 @@ extension Animator {
         }
         var animations: [CAAnimation] {
             return base.animations
+        }
+
+        func setDeinit(_ _deinit: (() -> ())?) {
+            base._deinit = _deinit
         }
     }
 
