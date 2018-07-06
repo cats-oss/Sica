@@ -23,6 +23,10 @@
 		9D436C5A20E9E8F200A1B938 /* Sica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A60FE320ABC9890079871A /* Sica.framework */; };
 		9D436C6620E9EA1E00A1B938 /* SicaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A60FF120ABC9890079871A /* SicaTests.swift */; };
 		9D436C6820E9EA1E00A1B938 /* Sica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A60FE320ABC9890079871A /* Sica.framework */; };
+		9D68159620EF10BB007B3FB0 /* CALayer+Sica.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449535220EE1F20004C8AB9 /* CALayer+Sica.swift */; };
+		9D68159720EF10BC007B3FB0 /* CALayer+Sica.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449535220EE1F20004C8AB9 /* CALayer+Sica.swift */; };
+		9D68159820EF10BF007B3FB0 /* View+Sica.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449535020EE1BAF004C8AB9 /* View+Sica.swift */; };
+		9D68159920EF10BF007B3FB0 /* View+Sica.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449535020EE1BAF004C8AB9 /* View+Sica.swift */; };
 		D449535120EE1BAF004C8AB9 /* View+Sica.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449535020EE1BAF004C8AB9 /* View+Sica.swift */; };
 		D449535320EE1F20004C8AB9 /* CALayer+Sica.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449535220EE1F20004C8AB9 /* CALayer+Sica.swift */; };
 		D4A60FED20ABC9890079871A /* Sica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A60FE320ABC9890079871A /* Sica.framework */; };
@@ -477,7 +481,9 @@
 				9D436C3320E9E4DD00A1B938 /* Transition.swift in Sources */,
 				9D436C3420E9E4DD00A1B938 /* CAAnimation+Extension.swift in Sources */,
 				9D436C3520E9E4DD00A1B938 /* Animator.swift in Sources */,
+				9D68159820EF10BF007B3FB0 /* View+Sica.swift in Sources */,
 				9D436C3620E9E4DD00A1B938 /* AnimationKeyPaths.swift in Sources */,
+				9D68159620EF10BB007B3FB0 /* CALayer+Sica.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,7 +495,9 @@
 				9D436C4520E9E71900A1B938 /* Transition.swift in Sources */,
 				9D436C4620E9E71900A1B938 /* CAAnimation+Extension.swift in Sources */,
 				9D436C4720E9E71900A1B938 /* Animator.swift in Sources */,
+				9D68159920EF10BF007B3FB0 /* View+Sica.swift in Sources */,
 				9D436C4820E9E71900A1B938 /* AnimationKeyPaths.swift in Sources */,
+				9D68159720EF10BC007B3FB0 /* CALayer+Sica.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
