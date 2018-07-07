@@ -23,7 +23,7 @@
   </a>
 </p>
 
-Sica can execute various animations sequentially or parallely.
+Sica can execute various animations sequentially or parallelly.
 
 ## Features
 - Animation with duration and delay
@@ -186,7 +186,7 @@ layer.sica
 ### AnimationPlayType
 you can choose animation play type
 - run animation sequentially
-- run animation parallely
+- run animation parallelly
 
 ### EasingFunctions
 you can choose various timing functions
