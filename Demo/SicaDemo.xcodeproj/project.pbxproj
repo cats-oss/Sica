@@ -31,9 +31,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D40D031E20B2660600E8FE38 /* AbemaAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AbemaAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D47A550720BE80A000AC5387 /* Easing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Easing.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		D48A812720DBB11100CB29ED /* Shika.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Shika.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D491472920E0CC2200A27A3C /* Sica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Sica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A6100620ABCA370079871A /* SicaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SicaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A6100920ABCA370079871A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,9 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				D491472920E0CC2200A27A3C /* Sica.framework */,
-				D48A812720DBB11100CB29ED /* Shika.framework */,
-				D47A550720BE80A000AC5387 /* Easing.playground */,
-				D40D031E20B2660600E8FE38 /* AbemaAnimator.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -315,9 +309,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SicaDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +330,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SicaDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
