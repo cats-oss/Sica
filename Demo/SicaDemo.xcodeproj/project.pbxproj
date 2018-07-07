@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D491472A20E0CC2200A27A3C /* Sica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D491472920E0CC2200A27A3C /* Sica.framework */; };
+		3774B5C320F10E07008D345A /* Sica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D491472920E0CC2200A27A3C /* Sica.framework */; };
+		3774B5C420F10E07008D345A /* Sica.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D491472920E0CC2200A27A3C /* Sica.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D4A6100A20ABCA370079871A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A6100920ABCA370079871A /* AppDelegate.swift */; };
 		D4A6100C20ABCA370079871A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A6100B20ABCA370079871A /* ViewController.swift */; };
 		D4A6100F20ABCA370079871A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A6100D20ABCA370079871A /* Main.storyboard */; };
@@ -15,10 +16,21 @@
 		D4A6101420ABCA390079871A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A6101220ABCA390079871A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3774B5C520F10E07008D345A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3774B5C420F10E07008D345A /* Sica.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		D40D031E20B2660600E8FE38 /* AbemaAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AbemaAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D47A550720BE80A000AC5387 /* Easing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Easing.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		D48A812720DBB11100CB29ED /* Shika.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Shika.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D491472920E0CC2200A27A3C /* Sica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Sica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A6100620ABCA370079871A /* SicaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SicaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A6100920ABCA370079871A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D491472A20E0CC2200A27A3C /* Sica.framework in Frameworks */,
+				3774B5C320F10E07008D345A /* Sica.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,9 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				D491472920E0CC2200A27A3C /* Sica.framework */,
-				D48A812720DBB11100CB29ED /* Shika.framework */,
-				D47A550720BE80A000AC5387 /* Easing.playground */,
-				D40D031E20B2660600E8FE38 /* AbemaAnimator.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -92,6 +101,7 @@
 				D4A6100220ABCA370079871A /* Sources */,
 				D4A6100320ABCA370079871A /* Frameworks */,
 				D4A6100420ABCA370079871A /* Resources */,
+				3774B5C520F10E07008D345A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -299,9 +309,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SicaDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,9 +330,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SicaDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
