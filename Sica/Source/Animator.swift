@@ -107,7 +107,7 @@ public final class Animator {
         }
         group.animations = animations
         group.duration = totalDuration(type: type)
-        group.fillMode =  FillMode.forwards.rawValue
+        group.fillMode = FillMode.forwards.rawValue
         group.isRemovedOnCompletion = isRemovedOnCompletion
 
         if let completion = completion {
