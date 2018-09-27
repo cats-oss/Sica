@@ -6,7 +6,7 @@
 <p align="center">
   <img src="http://img.shields.io/badge/platform-iOS | tvOS | macOS-blue.svg?style=flat" alt="Platform" />
   <a href="https://developer.apple.com/swift">
-    <img src="http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat" alt="Language" />
+    <img src="http://img.shields.io/badge/Swift-4.1%20|%204.2-brightgreen.svg?style=flat" alt="Language">
   </a>
   <a href="https://github.com/Carthage/Carthage">
     <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage" />
@@ -33,10 +33,11 @@ Sica can execute various animations sequentially or parallelly.
 - Transition
 
 ## Requirements
-- Xcode 9.3
+- Xcode 9.3 or greater
 - iOS 9 or greater
 - tvOS 10.0 or greater
 - macOS 10.11 or greater
+- Swift 4.2 (since 0.3.4)
 
 
 ## Installation
@@ -63,7 +64,7 @@ pod 'Sica'
 Sica is available through `SwiftPM`, create ` Package.swift` and add `dependencies` value
 ```Package.swift
 dependencies: [
-    .package(url: "https://github.com/cats-oss/Sica.git", from: "0.3.3")
+    .package(url: "https://github.com/cats-oss/Sica.git", from: "0.3.4")
 ]
 ```
 See also: [GitHub - j-channings/swift-package-manager-ios: Example of how to use SPM v4 to manage iOS dependencies](https://github.com/j-channings/swift-package-manager-ios)
