@@ -20,7 +20,7 @@ public struct FillMode {
     public static let forwards = FillMode(rawValue: kCAFillModeForwards)
     public static let backwards = FillMode(rawValue: kCAFillModeBackwards)
     public static let both = FillMode(rawValue: kCAFillModeBoth)
-    public static let removed= FillMode(rawValue: kCAFillModeRemoved)
+    public static let removed = FillMode(rawValue: kCAFillModeRemoved)
     #endif
 
     let rawValue: RawValue
