@@ -13,7 +13,7 @@ extension CAAnimation {
         self.beginTime = delay
         self.duration = duration
         self.timingFunction = timingFunction.rawValue
-        self.fillMode = kCAFillModeForwards
+        self.fillMode = FillMode.forwards.rawValue
         self.isRemovedOnCompletion = isRemovedOnCompletion
     }
 }

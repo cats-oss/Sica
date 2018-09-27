@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		313DA7AB215D2C3100842816 /* FillMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313DA7AA215D2C3100842816 /* FillMode.swift */; };
+		313DA7AC215D2DBC00842816 /* FillMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313DA7AA215D2C3100842816 /* FillMode.swift */; };
+		313DA7AD215D2DBD00842816 /* FillMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313DA7AA215D2C3100842816 /* FillMode.swift */; };
 		9D436C3220E9E4DD00A1B938 /* TimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C620AC2BDD003232F6 /* TimingFunction.swift */; };
 		9D436C3320E9E4DD00A1B938 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C220AC2BDD003232F6 /* Transition.swift */; };
 		9D436C3420E9E4DD00A1B938 /* CAAnimation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CB78C120AC2BDD003232F6 /* CAAnimation+Extension.swift */; };
@@ -64,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		313DA7AA215D2C3100842816 /* FillMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillMode.swift; sourceTree = "<group>"; };
 		9D436C3F20E9E4DD00A1B938 /* Sica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D436C4120E9E62700A1B938 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		9D436C5120E9E71900A1B938 /* Sica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +200,7 @@
 				D4CB78C420AC2BDD003232F6 /* Animator.swift */,
 				D4CB78C120AC2BDD003232F6 /* CAAnimation+Extension.swift */,
 				D449535220EE1F20004C8AB9 /* CALayer+Sica.swift */,
+				313DA7AA215D2C3100842816 /* FillMode.swift */,
 				D4CB78C620AC2BDD003232F6 /* TimingFunction.swift */,
 				D4CB78C220AC2BDD003232F6 /* Transition.swift */,
 				D449535020EE1BAF004C8AB9 /* View+Sica.swift */,
@@ -482,6 +487,7 @@
 				9D436C3420E9E4DD00A1B938 /* CAAnimation+Extension.swift in Sources */,
 				9D436C3520E9E4DD00A1B938 /* Animator.swift in Sources */,
 				9D68159820EF10BF007B3FB0 /* View+Sica.swift in Sources */,
+				313DA7AC215D2DBC00842816 /* FillMode.swift in Sources */,
 				9D436C3620E9E4DD00A1B938 /* AnimationKeyPaths.swift in Sources */,
 				9D68159620EF10BB007B3FB0 /* CALayer+Sica.swift in Sources */,
 			);
@@ -496,6 +502,7 @@
 				9D436C4620E9E71900A1B938 /* CAAnimation+Extension.swift in Sources */,
 				9D436C4720E9E71900A1B938 /* Animator.swift in Sources */,
 				9D68159920EF10BF007B3FB0 /* View+Sica.swift in Sources */,
+				313DA7AD215D2DBD00842816 /* FillMode.swift in Sources */,
 				9D436C4820E9E71900A1B938 /* AnimationKeyPaths.swift in Sources */,
 				9D68159720EF10BC007B3FB0 /* CALayer+Sica.swift in Sources */,
 			);
@@ -526,6 +533,7 @@
 				D4CB78CA20AC2BDD003232F6 /* CAAnimation+Extension.swift in Sources */,
 				D4CB78CD20AC2BDD003232F6 /* Animator.swift in Sources */,
 				D449535320EE1F20004C8AB9 /* CALayer+Sica.swift in Sources */,
+				313DA7AB215D2C3100842816 /* FillMode.swift in Sources */,
 				D449535120EE1BAF004C8AB9 /* View+Sica.swift in Sources */,
 				D4CB78CE20AC2BDD003232F6 /* AnimationKeyPaths.swift in Sources */,
 			);
@@ -584,7 +592,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -613,7 +621,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -641,7 +649,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
@@ -670,7 +678,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
@@ -693,7 +701,7 @@
 				PRODUCT_NAME = SicaTests;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Debug;
@@ -715,7 +723,7 @@
 				PRODUCT_NAME = SicaTests;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Release;
@@ -737,7 +745,7 @@
 				PRODUCT_NAME = SicaTests;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -759,7 +767,7 @@
 				PRODUCT_NAME = SicaTests;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -906,7 +914,7 @@
 				PRODUCT_NAME = Sica;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -933,7 +941,7 @@
 				PRODUCT_NAME = Sica;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -954,7 +962,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cats-oss.SicaTests";
 				PRODUCT_NAME = SicaTests;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -975,7 +983,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cats-oss.SicaTests";
 				PRODUCT_NAME = SicaTests;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

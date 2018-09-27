@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "Sica"
-  s.version      = "0.3.3"
+  s.version      = "0.3.4"
   s.summary      = "Sica can execute various animations sequentially or parallely"
   s.homepage     = "https://github.com/cats-oss/Sica"
   s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
   s.osx.deployment_target  = "10.11"
   s.source       = { :git => "https://github.com/cats-oss/Sica.git", :tag => "#{s.version}" }
   s.source_files = "Sica/**/*.{swift}"
-  s.swift_version = '4.1'
+  s.swift_version = '4.2'
 end
