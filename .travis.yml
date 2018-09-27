@@ -1,0 +1,13 @@
+language: objective-c
+osx_image: xcode10
+xcode_workspace: Demo/SicaDemo.xcworkspace
+xcode_scheme: Sica-iOS
+xcode_sdk: iphonesimulator
+before_install:
+  - gem install xcpretty
+script:
+  - xcodebuild test -workspace Demo/SicaDemo.xcworkspace -scheme Sica-iOS -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=12.0,name=iPhone X'| xcpretty -c
+  - pod lib lint
+
+notifications:
+  email: false
