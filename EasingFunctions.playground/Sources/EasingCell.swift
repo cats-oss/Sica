@@ -27,7 +27,7 @@ class EasingCell: UICollectionViewCell {
     }
     
     func configure(timingFunction: TimingFunction) {
-        label.text = timingFunction.name
+        label.text = timingFunction.name.rawValue
         self.timingFunction = timingFunction
     }
     
