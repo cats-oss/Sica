@@ -100,14 +100,14 @@ public final class Animator {
         layer?.removeAnimation(forKey: key)
     }
 
-    public func run(type: AnimationPlayType, isRemovedOnCompletion: Bool = false, completion: (() -> Void)? = nil) {
+    public func run(type: AnimationPlayType, fillMode: FillMode = FillMode.forwards, isRemovedOnCompletion: Bool = false, completion: (() -> Void)? = nil) {
 
         if case .sequence = type {
             calculateBeginTime()
         }
         group.animations = animations
         group.duration = totalDuration(type: type)
-        group.fillMode = FillMode.forwards.rawValue
+        group.fillMode = fillMode.rawValue
         group.isRemovedOnCompletion = isRemovedOnCompletion
 
         if let completion = completion {
