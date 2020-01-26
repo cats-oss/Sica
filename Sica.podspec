@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "Sica"
-  s.version      = "0.4.0"
+  s.version      = "0.4.1"
   s.summary      = "Sica can execute various animations sequentially or parallely"
   s.homepage     = "https://github.com/cats-oss/Sica"
   s.license      = { :type => "MIT", :file => "LICENSE" }
