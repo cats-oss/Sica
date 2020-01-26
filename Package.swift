@@ -1,9 +1,13 @@
-// swift-tools-version:4.0
-// The swift-tools-version declares the minimum version of Swift required to build this package.
+// swift-tools-version:5.1
 
 import PackageDescription
 let package = Package(
     name: "Sica",
+    platforms: [
+        .iOS(.v9),
+        .macOS(.v10_10),
+        .tvOS(.v10)
+    ],
     products: [
         .library(
             name: "Sica",
@@ -14,5 +18,6 @@ let package = Package(
             name: "Sica",
             dependencies: [],
             path: "Sica/Source")
-    ]
+    ],
+    swiftLanguageVersions: [.v4_2, .v5]
 )
