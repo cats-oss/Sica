@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import QuartzCore
 
 private let _animatorAssociatedKey = UnsafeMutablePointer<UInt>.allocate(capacity: 1)
 

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import QuartzCore
 
 public struct FillMode {
     #if swift(>=4.2)
